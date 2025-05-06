@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Irumi Kikuchi Portfolio</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+            <div class="container-fluid px-1">
+                <a class="navbar-brand" href="#">IRUMI KIKUCHI</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item"><a class="nav-link" href="#top">Top</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#hands-on">Projects</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#resume">Resume</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section id="top" class="section py-5 bg-dark bg-opacity-75">
+            <div class="page neonText">
+                <h1>IRUMI KIKUCHI</h1>
+                <!-- Table for navigation links -->
+                <ul class="list-inline mt-4">
+                    <li><a class="nav-link " href="#about">About</a></li>
+                    <li><a class="nav-link" href="#hands-on">Projects</a></li>
+                    <li><a class="nav-link" href="#skills">Skills</a></li>
+                    <li><a class="nav-link" href="#resume">Resume</a></li>
+                    <li><a class="nav-link" href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- About Me Section -->
+        <section id="about" class="section bg-dark bg-opacity-75">
+            <div class="page neonText">
+                <h2>ABOUT ME</h2>
+                <p>IT engineering is more than a job for me.
+                    It's a way to explore tech trend, to scale and empower organization and
+                    people's stereotype and lifestyle</p>
+            </div>
+        </section>
+
+        <!-- Hands-On Projects Section -->
+        <section id="hands-on" class="section bg-dark bg-opacity-75">
+            <div class="page">
+                <h2 class="neonText">HANDS-ON PROJECTS</h2>
+                <div class="projects">
+                    <div class="card mt-2 mb-5">
+                        <h5 class="card-title">ASP.NET - Car Loan Calculator</h5>
+                        <img src="images/CarLoan.png" alt="Car Loan Calculator" class="img-thumbnail me-4 ms-4 mb-2">
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                            of the card’s content.</p>
+                    </div>
+                    <div class="card mt-2 mb-5">
+                        <h5 class="card-title">Java - Othello Game</h5>
+                        <img src="images/CarLoan.png" alt="Car Loan Calculator" class="img-thumbnail me-4 ms-4 mb-2">
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                            of the card’s content.</p>
+                    </div>
+                    <div class="card mt-2 mb-5">
+                        <h5 class="card-title">Python - Galaxy Classification(Undergraduate Research Project)</h5>
+                        <img src="images/CarLoan.png" alt="Car Loan Calculator" class="img-thumbnail me-4 ms-4 mb-2">
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                            of the card’s content.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills" class="section bg-dark bg-opacity-75">
+            <div class="page">
+                <h2 class="neonText">SKILLS HIGHLIGHT</h2>
+                <div class="skill">
+                    <span class="skill-name">JavaScript 70%</span>
+                    <div class="skill-bar">
+                        <div class="skill-fill" data-percentage="75"></div>
+                    </div>
+                </div>
+
+                <div class="skill">
+                    <span class="skill-name">TypeScript 70%</span>
+                    <div class="skill-bar">
+                        <div class="skill-fill" data-percentage="75"></div>
+                    </div>
+                </div>
+
+                <div class="skill">
+                    <span class="skill-name">C# 70%</span>
+                    <div class="skill-bar">
+                        <div class="skill-fill" data-percentage="75"></div>
+                    </div>
+                </div>
+
+                <div class="skill">
+                    <span class="skill-name">Java 60%</span>
+                    <div class="skill-bar">
+                        <div class="skill-fill" data-percentage="60"></div>
+                    </div>
+                </div>
+
+                <div class="skill">
+                    <span class="skill-name">Python 50%</span>
+                    <div class="skill-bar">
+                        <div class="skill-fill" data-percentage="50"></div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Resume Section -->
+        <section id="resume" class="section bg-dark bg-opacity-75">
+            <div class="page neonText">
+                <h2>RESUME</h2>
+
+                <!-- Embed PDF viewer -->
+                <div style="width: 100%; height: 500px;">
+                    <iframe src="images/resume.pdf" width="100%" height="100%" style="border: none;"></iframe>
+                </div>
+
+                <!-- Download link -->
+                <p style="margin-top: 20px;">
+                    <a href="images/resume.pdf" download target="_blank" class="download-link">
+                        Download PDF
+                    </a>
+                </p>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="section bg-dark bg-opacity-75">
+            <div class="page neonText">
+                <h2>CONTACT</h2>
+                <p>You can find me on the platforms below:</p>
+
+                <div class="contact-icons">
+                    <a href="https://github.com/irmnt" target="_blank" aria-label="GitHub">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/irumi-kikuchi" target="_blank" aria-label="LinkedIn">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                    <a href="mailto:irumikikuchi@gmail.com" aria-label="Email">
+                        <i class="fas fa-envelope"></i>
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white text-center py-3">
+        <p>&copy; 2025 Irumi Kikuchi</p>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
