@@ -125,7 +125,7 @@ footer {
 }
 
 .card {
-    width: 20rem;
+    width: 30rem;
     position: center;
     padding: 10px;
     background-color: transparent;
@@ -153,6 +153,7 @@ footer {
   transition: opacity 0.5s ease-in-out;
   height: 0;
   overflow: hidden;
+  font-size: 12px;
 }
 
 .card:hover .card-text {
