@@ -191,7 +191,7 @@ footer {
 
 .skill-icons {
   display: grid;
-  grid-template-columns: repeat(5, 1fr); /* 5 equal columns */
+  grid-template-columns: repeat(8, 1fr); /* 5 equal columns */
   gap: 20px; /* space between items */
 }
 
@@ -213,6 +213,10 @@ footer {
     width: 30px;
     margin-bottom: 5px;
     transition: color 0.5s ease, transform 0.5s ease;
+}
+
+.skill-item span {
+    font-size: 0.8rem;
 }
 
 .skill-item:hover {
