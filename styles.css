@@ -141,6 +141,7 @@ footer {
     border-radius: 16px;
     object-fit: cover;
 }
+
 .projects {
     display: flex;
     justify-content: center;
@@ -161,7 +162,7 @@ footer {
     object-fit: contain;
 }
 
-.button{
+.button {
     background-color: #000;
     color: #fff;
     border: none;
@@ -173,16 +174,17 @@ footer {
 }
 
 .card .card-text {
-  opacity: 0;
-  transition: opacity 0.5s ease-in-out;
-  height: 0; /* Hide space for hidden description */
-  overflow: hidden;
-  font-size: 12px;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+    height: 0;
+    /* Hide space for hidden description */
+    overflow: hidden;
+    font-size: 12px;
 }
 
 .card:hover .card-text {
-  opacity: 1;
-  height: auto;
+    opacity: 1;
+    height: auto;
 }
 
 .card:hover {
@@ -190,26 +192,27 @@ footer {
 }
 
 .skill-icons {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, 50px);
-  gap: 20px; /* space between items */
-  justify-items: center;
-  padding: 10px 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 50px);
+    gap: 20px;
+    /* space between items */
+    justify-items: center;
+    padding: 10px 0;
 }
 
 
 .skill-item {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-  color: lightcyan;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    color: lightcyan;
 }
 
 .skill-item i {
-  font-size: 2rem;
-  margin-bottom: 5px;
-  transition: color 0.5s ease, transform 0.5s ease;
+    font-size: 2rem;
+    margin-bottom: 5px;
+    transition: color 0.5s ease, transform 0.5s ease;
 }
 
 .skill-item img {
@@ -224,8 +227,8 @@ footer {
 }
 
 .skill-item:hover {
-  transform: scale(1.1);
-  color: #fff;
+    transform: scale(1.1);
+    color: #fff;
 }
 
 .download-link {
@@ -253,4 +256,3 @@ footer {
 .contact-icons a:hover {
     color: lightcyan;
 }
-
