@@ -18,7 +18,7 @@ h1 {
     font-weight: 700;
 }
 
-h2 {
+h2,h3 {
     margin-bottom: 20px;
 }
 
@@ -150,6 +150,7 @@ footer {
 .card {
     width: fit-content;
     position: center;
+    margin: 20px;
     padding: 10px;
     background-color: transparent;
     border: #fff 1px solid;
@@ -158,7 +159,8 @@ footer {
 }
 
 .img-thumbnail {
-    width: auto;
+    max-height: 300px;
+    max-width: 500px;
     object-fit: contain;
 }
 
@@ -175,6 +177,8 @@ footer {
 
 .card .card-text {
     opacity: 0;
+    padding-left: 30px;
+    padding-right: 30px;
     transition: opacity 0.5s ease-in-out;
     height: 0;
     /* Hide space for hidden description */
