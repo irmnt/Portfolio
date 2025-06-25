@@ -7,8 +7,7 @@
 
 /* Body and background */
 body {
-    font-family: "Century Gothic", sans-serif;
-    color: #fff;
+    font-family: "Poppins", sans-serif;
 }
 
 h1 {
@@ -20,6 +19,7 @@ h1 {
 h2,
 h3 {
     margin-bottom: 20px;
+    font-weight: 600;
 }
 
 h4 {
@@ -30,10 +30,12 @@ h4 {
     padding-bottom: 10px;
 }
 
-
-
 strong {
-    color: darkcyan;
+    color: rgb(1, 111, 1);
+}
+
+p {
+    font-weight: 550;
 }
 
 /* Header styling */
@@ -65,12 +67,14 @@ footer {
 
 .navbar-nav .nav-link:hover,
 .navbar-nav .nav-link.active {
-    border-bottom: 2px solid darkcyan;
+    /* TODO - modify the color */
+    border-bottom: 2px solid rgb(60, 110, 110);
 }
 
 .page {
-    max-width: 600px;
-    flex-wrap: wrap;
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 0 20px;
 }
 
 /* Default: Dark Mode*/
@@ -80,12 +84,13 @@ footer {
     background-position: center;
     background-repeat: repeat;
     background-size: auto;
-    background-color: rgba(58, 92, 92, 0.8);
+    color: rgba(180, 250, 250, 0.8);
+    background-color: rgb(0, 0, 0);
 }
 
 /* Light mode styles */
 body.light-mode {
-    background-color: rgb(180, 255, 250);
+    background-color: rgba(140, 200, 200, 0.9);
     color: rgba(0, 0, 0, 0.6);
 }
 
@@ -109,7 +114,6 @@ body.light-mode {
     justify-content: center;
     text-align: center;
     font-weight: 400;
-    background-color: rgba(255, 255, 255, 0.1);
 }
 
 .section.in-view {
@@ -117,27 +121,24 @@ body.light-mode {
     transition: opacity 0.5s ease-in-out;
 }
 
-
-.nav-list {
-    list-style: none;
-    padding: 0;
-    margin-top: 20px;
+.section:not(:last-child) {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
 }
 
-.nav-list li {
-    margin-bottom: 10px;
+body.light-mode .section:not(:last-child) {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
 }
 
-.nav-list .nav-link {
-    color: #333;
+.nav-item .nav-link {
+    color: rgba(255, 255, 255, 0.8);
     font-weight: 500;
     text-decoration: none;
     transition: color 0.3s ease;
 }
 
-.nav-list .nav-link:hover,
-.nav-list .nav-link.active {
-    color: darkcyan;
+.nav-item .nav-link:hover,
+.nav-item .nav-link.active {
+    color: #fff;
 }
 
 
@@ -152,7 +153,8 @@ body.light-mode {
 }
 
 #top li a:hover {
-    color: darkcyan;
+    /* TODO: Color */
+    color: rgb(160, 85, 55);
     font-weight: bold;
 }
 
@@ -169,13 +171,40 @@ body.light-mode {
 }
 
 .card {
-    width: fit-content;
-    position: center;
-    margin: 20px;
-    padding: 10px;
-    background-color: transparent;
-    border: #fff 1px solid;
-    transition: all 0.3s ease;
+    background-color: rgba(20, 20, 20, 0.9);
+    border: 1px solid #0ff;
+    color: rgba(225, 255, 255, 0.9);
+    border-radius: 12px;
+    padding: 1.5rem;
+    box-shadow: 0 0 12px rgba(0, 255, 255, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: scale(1.03);
+    box-shadow: 0 0 18px rgba(0, 255, 255, 0.3);
+}
+
+.card .card-text {
+    opacity: 0;
+    padding-left: 30px;
+    padding-right: 30px;
+    transition: opacity 0.5s ease-in-out;
+    height: 0;
+    /* Hide space for hidden description */
+    overflow: hidden;
+    font-size: 12px;
+}
+
+.card:hover .card-text {
+    opacity: 1;
+    height: auto;
+}
+
+body.light-mode .card {
+    background-color: #fefefe;
+    color: #000;
+    border: 1.5px solid #00bcd4
 }
 
 .img-thumbnail {
@@ -195,24 +224,62 @@ body.light-mode {
     transition: background-color 0.3s ease, transform 0.3s ease;
 }
 
-.card .card-text {
-    opacity: 0;
-    padding-left: 30px;
-    padding-right: 30px;
-    transition: opacity 0.5s ease-in-out;
-    height: 0;
-    /* Hide space for hidden description */
-    overflow: hidden;
-    font-size: 12px;
+.project-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 1.5rem;
 }
 
-.card:hover .card-text {
-    opacity: 1;
-    height: auto;
+.project-card {
+    background-color: rgba(30, 30, 30, 0.9);
+  padding: 1.5rem;
+  border-radius: 12px;
+  border: 1px solid #0ff;
+  box-shadow: 0 0 15px rgba(0, 255, 255, 0.1);
+  transition: transform 0.2s ease;
 }
 
-.card:hover {
-    transform: scale(1.1);
+.project-card:hover {
+    transform: translateY(-4px);
+}
+
+.project-header {
+    margin-bottom: 0.5rem;
+}
+
+.project-tag {
+    background: #0ff;
+    color: #000;
+    font-size: 0.75rem;
+    font-weight: bold;
+    padding: 0.2rem 0.5rem;
+    border-radius: 6px;
+    display: inline-block;
+    margin-bottom: 0.4rem;
+}
+
+.project-card p {
+    font-size: 0.95rem;
+    margin-bottom: 0.5rem;
+}
+
+.project-list {
+    margin-top: 0;
+    padding-left: 1.2rem;
+    list-style-type: disc;
+    color: #ddd;
+    font-size: 0.9rem;
+    line-height: 1.5;
+}
+
+body.light-mode .project-card {
+    background-color: #fdfdfd;
+    color: #000;
+    border-color: #00bcd4;
+}
+
+body.light-mode .project-list {
+    color: #333;
 }
 
 .skill-icons {

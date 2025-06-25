@@ -2,182 +2,142 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Irumi Kikuchi Portfolio</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
-
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Irumi Kikuchi Portfolio</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" />
 </head>
 
 <body class="bg-container">
-    <header>
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
-            <div class="container-fluid px-1">
-                <a class="navbar-brand" href="#">IRUMI KIKUCHI</a>
-                <div>
-                    <button id="themeToggle" class="btn btn-sm btn-outline-light ms-2" aria-label="Toggle theme">
-                        <i id="themeIcon" class="bi bi-sun-fill"></i>
-                    </button>
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                </div>
-                <div class="collapse navbar-collapse" id="navbarNav">
-                    <ul class="navbar-nav ms-auto">
-                        <li class="nav-item"><a class="nav-link" href="#top">Top</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#hands-on">Projects</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
-    </header>
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+      <div class="container-fluid px-1">
+        <a class="navbar-brand" href="#">IRUMI KIKUCHI</a>
+        <div class="d-flex align-items-center">
+          <button id="themeToggle" class="btn btn-sm btn-outline-light me-2" aria-label="Toggle theme">
+            <i id="themeIcon" class="bi bi-sun-fill"></i>
+          </button>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+        </div>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item"><a class="nav-link" href="#top">Top</a></li>
+            <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+            <li class="nav-item"><a class="nav-link" href="#hands-on">Projects</a></li>
+            <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+            <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
 
     <div id="bg-container"></div>
 
-    <main>
-        <!-- Top Section -->
-        <section id="top" class="section py-5">
-            <div class="page">
-                <h1>IRUMI KIKUCHI</h1>
-                <!-- Table for navigation links -->
-                <ul class="list-inline mt-4">
-                    <li><a class="nav-link " href="#about">About</a></li>
-                    <li><a class="nav-link" href="#hands-on">Projects</a></li>
-                    <li><a class="nav-link" href="#skills">Skills</a></li>
-                    <li><a class="nav-link" href="#contact">Contact</a></li>
-                </ul>
-            </div>
-        </section>
+  <main>
+    <section id="top" class="section py-5">
+      <div class="page">
+        <h1>IRUMI KIKUCHI</h1>
+        <ul class="list-inline mt-4">
+          <li><a class="nav-link" href="#about">About</a></li>
+          <li><a class="nav-link" href="#hands-on">Projects</a></li>
+          <li><a class="nav-link" href="#skills">Skills</a></li>
+          <li><a class="nav-link" href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </section>
 
-        <!-- About Me Section -->
-        <section id="about" class="section">
-            <div class="page">
-                <div class="mb-5">
-                    <img src="images/profile.JPEG" class="img-fluid profile-img" />
+    <section id="about" class="section">
+      <div class="page">
+        <div class="mb-5">
+          <img src="images/profile.JPEG" class="img-fluid profile-img" alt="Profile" />
+        </div>
+        <h2>ABOUT ME</h2>
+        <p>
+          As a <strong>software engineer</strong> at heart, I embrace the <strong>evolving world of technology</strong> with an open mind.
+          I’m fascinated by the rapid rise of <strong>cloud computing</strong> as the backbone of modern organizational systems
+          and the transformative impact of <strong>AI</strong> as it weaves into our daily lives.
+          My passion lies in continuously learning <strong>cutting-edge technologies</strong> and harnessing them
+          to build <strong>smarter systems</strong> that enhance how we live and work.
+        </p>
+        <p>
+          I’m driven by the excitement of <strong>innovation</strong> and the belief that <strong>technology</strong>,
+          when thoughtfully applied, can create a more <strong>connected</strong> and <strong>intelligent future</strong>.
+          Staying ahead of <strong>trends</strong> and adapting to <strong>change</strong> isn’t just my job — it’s my <strong>philosophy</strong>.
+        </p>
+      </div>
+    </section>
+
+    <section id="hands-on" class="section">
+      <div class="page">
+        <h2>HANDS-ON PROJECTS</h2>
+        <div class="projects mx-3">
+          <div class="col-12">
+            <div class="card mt-2 mb-5">
+              <h5 class="card-title">ASP.NET - Car Loan Calculator</h5>
+              <img src="images/CarLoan.png" alt="Car Loan Calculator" class="img-thumbnail me-4 ms-4 mb-2" />
+              <p class="card-text">
+                Built with ASP.NET and C#, this application helps users calculate car loan payments across three different plans by adjusting loan amount, interest rate, tax, and duration.
+              </p>
+            </div>
+            <div class="card mt-2 mb-5">
+              <h5 class="card-title">Java - Othello Game</h5>
+              <img src="images/Othello.png" alt="Java Othello" class="img-thumbnail me-4 ms-4 mb-2" />
+              <p class="card-text">
+                A console-based two-player game with move validation, automatic piece flipping, and game-over logic, created for learning algorithmic flow and Java object design.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <h3>Cloud & Infrastructure Projects</h3>
+        <div class="projects mx-3">
+          <div class="col-12">
+            <div class="project-grid">
+              <!-- Windows Server Project -->
+              <div class="project-card">
+                <div class="project-header">
+                  <span class="project-tag">WindowsServer</span>
+                  <h3>Enterprise Infrastructure Deployment</h3>
                 </div>
-                <h2>ABOUT ME</h2>
                 <p>
-                    As a <strong>software engineer</strong> at heart, I embrace the <strong>evolving world of
-                        technology</strong> with an open mind.
-                    I’m fascinated by the rapid rise of <strong>cloud computing</strong> as the backbone of
-                    modern
-                    organizational systems
-                    and the transformative impact of <strong>AI</strong> as it weaves into our daily lives.
-                    My passion lies in continuously learning <strong>cutting-edge technologies</strong> and
-                    harnessing
-                    them
-                    to build <strong>smarter systems</strong> that enhance how we live and work.
-                    I’m driven by the excitement of <strong>innovation</strong> and the belief that
-                    <strong>technology</strong>,
-                    when thoughtfully applied, can create a more <strong>connected</strong> and
-                    <strong>intelligent
-                        future</strong>.
-                    Staying ahead of <strong>trends</strong> and adapting to <strong>change</strong> isn’t just
-                    my
-                    job —
-                    it’s my <strong>philosophy</strong>.
-                    I’m dedicated to growing alongside the <strong>tech landscape</strong>, always ready to
-                    shape
-                    the
-                    next wave of <strong>possibilities</strong>.
+                  Deployed a secure Windows Server Core domain (<code>contoso.local</code>) with Active Directory, Group Policy, DHCP, DNS, Hyper-V, and WDS.
                 </p>
-            </div>
-        </section>
+                <ul class="project-list">
+                  <li><strong>AD & GPO:</strong> Server Core setup, ADDS configuration, password policies via Group Policy.</li>
+                  <li><strong>Network Services:</strong> DHCP with multiple scopes, DNS with forwarding.</li>
+                  <li><strong>Storage & Virtualization:</strong> iSCSI provisioning, Hyper-V VMs, and replication.</li>
+                  <li><strong>Automation:</strong> WDS deployment with GPO rules for zero-touch provisioning.</li>
+                </ul>
+              </div>
 
-        <!-- Hands-On Projects Section -->
-        <section id="hands-on" class="section">
-            <div class="page">
-                <h2>HANDS-ON PROJECTS</h2>
-                <h3>Developer Projects</h3>
-                <div class="projects mx-3">
-                    <div class="col-12">
-                        <div class="card mt-2 mb-5">
-                            <h5 class="card-title">ASP.NET - Car Loan Calculator</h5>
-                            <img src="images/CarLoan.png" alt="CarLoanCalculator" class="img-thumbnail me-4 ms-4 mb-2">
-                            <p class="card-text">A hands-on project to improve my ASP.NET and C# skills
-                                with a loan calculator example. This application allows users to calculate
-                                their monthly car loan payments based on various factors such as loan amount,
-                                interest rate, tax rate, and loan term. It supports three different loan plans
-                                (Plan A, Plan B, Plan C), providing flexibility for users to compare payment
-                                options.
-                            </p>
-                        </div>
-                        <div class="card mt-2 mb-5">
-                            <h5 class="card-title">Java - Othello Game</h5>
-                            <img src="images/Othello.png" alt="JavaOthello" class="img-thumbnail me-4 ms-4 mb-2">
-                            <p class="card-text">A simple console-based Othello game where two players can
-                                compete
-                                against each other. The game includes valid move checks, automatic piece
-                                flipping,
-                                and game-over detection.</p>
-                        </div>
-                    </div>
+              <!-- Microsoft 365 Project -->
+              <div class="project-card">
+                <div class="project-header">
+                  <span class="project-tag">M365</span>
+                  <h3>Microsoft 365 Environment Implementation</h3>
                 </div>
-
-                <h3>Cloud & Infrastructure Projcts</h3>
-                <div class="projects mx-3">
-                    <div class="col-12">
-                        <div class="mt-2 mb-5">
-                            <h5 class="card-title">Windows Server Infrastructure Deployment Project</h5>
-                            <img src="images/WindowsServer.png" alt="WindowsServer"
-                                class="img-thumbnail me-4 ms-4 mb-2">
-                            <p class="card-text"><strong>Enterprise Server Configuration</strong><br>
-                                Set up a Windows Server Core environment for a simulated enterprise (contoso.local),
-                                configuring Active Directory Domain Services and enforcing password policies through
-                                Group Policy.<br>
-
-                                <strong>Network Services Deployment</strong><br>
-                                Deployed and managed DHCP with multiple scopes, superscopes, multicast scope, custom
-                                options, and IP reservations. Configured DNS forwarding for reliable name
-                                resolution.<br>
-
-                                <strong>Storage & Virtualization Implementation</strong><br>
-                                Created a storage pool and virtual disk; provisioned iSCSI targets and connected storage
-                                across servers. Deployed Hyper-V, set up VMs, and implemented VM replication.<br>
-
-                                <strong>Automated System Deployment</strong><br>
-                                Installed and configured Windows Deployment Services (WDS), enforcing deployment rules
-                                and automating client behavior via Group Policy settings.
-                            </p>
-                        </div>
-                        <div class="mt-2 mb-5">
-                            <h5 class="card-title">Microsoft 365 Environment Implementation Project</h5>
-                            <img src="images/Microsoft365.png" alt="M365" class="img-thumbnail me-4 ms-4 mb-2">
-                            <p class="card-text"><strong>Microsoft 365 Environment Implementation</strong><br>
-                                Designed and deployed a full Microsoft 365 environment for a fictional mid-sized
-                                organization (TechSolutions Inc., 300 users) to enhance collaboration, security, and
-                                operational efficiency.<br>
-
-                                <strong>User & Permissions Management</strong><br>
-                                Used Microsoft 365 Admin Center and PowerShell to bulk import users, assign licenses,
-                                and configure Office 365 Groups with departmental permissions.<br>
-
-                                <strong>Collaboration & Communication Tools Setup</strong><br>
-                                Set up SharePoint sites, OneDrive policies, and Viva Engage to support internal
-                                communication and knowledge sharing.<br>
-
-                                <strong>Security & Compliance Configuration</strong><br>
-                                Implemented Microsoft Defender for Office 365 with anti-phishing and anti-malware
-                                protections; configured message encryption, audit logs, DLP alerts, and usage
-                                reporting.<br>
-
-                                <strong>Project Delivery & Documentation</strong><br>
-                                Provided complete system documentation and presented a stakeholder briefing to
-                                demonstrate compliance and service health monitoring.
-                            </p>
-                        </div>
-                    </div>
-                </div>
+                <p>
+                  Designed a complete Microsoft 365 ecosystem for a simulated mid-sized company (TechSolutions Inc.) to support 300 users across identity, collaboration, and security.
+                </p>
+                <ul class="project-list">
+                  <li><strong>Users & Permissions:</strong> Imported users, assigned licenses, configured Office 365 Groups.</li>
+                  <li><strong>Tools:</strong> Deployed SharePoint, OneDrive, Viva Engage for internal comms.</li>
+                  <li><strong>Security:</strong> Enabled Defender, DLP alerts, message encryption, and audit logs.</li>
+                  <li><strong>Documentation:</strong> Delivered handoff documentation and stakeholder presentation.</li>
+                </ul>
+              </div>
             </div>
-        </section>
+          </div>
+        </div>
+      </div>
+    </section>
 
         <!-- Skills Section -->
         <section id="skills" class="section">
