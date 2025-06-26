@@ -19,9 +19,10 @@
         <a class="navbar-brand" href="#">IRUMI KIKUCHI</a>
         <div class="d-flex align-items-center">
           <button id="themeToggle" class="btn btn-sm btn-outline-light me-2" aria-label="Toggle theme">
-            <i id="themeIcon" class="bi bi-sun-fill"></i>
+            <i id="themeIcon" class="bi bi-moon-fill"></i>
           </button>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
         </div>
@@ -38,13 +39,12 @@
     </nav>
   </header>
 
-    <div id="bg-container"></div>
-
+  <div class="parallax-bg" id="bg"></div>
   <main>
     <section id="top" class="section py-5">
       <div class="page">
         <h1>IRUMI KIKUCHI</h1>
-        <ul class="list-inline mt-4">
+        <ul class="list-inline">
           <li><a class="nav-link" href="#about">About</a></li>
           <li><a class="nav-link" href="#hands-on">Projects</a></li>
           <li><a class="nav-link" href="#skills">Skills</a></li>
@@ -60,16 +60,20 @@
         </div>
         <h2>ABOUT ME</h2>
         <p>
-          As a <strong>software engineer</strong> at heart, I embrace the <strong>evolving world of technology</strong> with an open mind.
-          I’m fascinated by the rapid rise of <strong>cloud computing</strong> as the backbone of modern organizational systems
+          As a <strong>software engineer</strong> at heart, I embrace the <strong>evolving world of technology</strong>
+          with an open mind.
+          I’m fascinated by the rapid rise of <strong>cloud computing</strong> as the backbone of modern organizational
+          systems
           and the transformative impact of <strong>AI</strong> as it weaves into our daily lives.
           My passion lies in continuously learning <strong>cutting-edge technologies</strong> and harnessing them
           to build <strong>smarter systems</strong> that enhance how we live and work.
         </p>
         <p>
           I’m driven by the excitement of <strong>innovation</strong> and the belief that <strong>technology</strong>,
-          when thoughtfully applied, can create a more <strong>connected</strong> and <strong>intelligent future</strong>.
-          Staying ahead of <strong>trends</strong> and adapting to <strong>change</strong> isn’t just my job — it’s my <strong>philosophy</strong>.
+          when thoughtfully applied, can create a more <strong>connected</strong> and <strong>intelligent
+            future</strong>.
+          Staying ahead of <strong>trends</strong> and adapting to <strong>change</strong> isn’t just my job — it’s my
+          <strong>philosophy</strong>.
         </p>
       </div>
     </section>
@@ -77,199 +81,244 @@
     <section id="hands-on" class="section">
       <div class="page">
         <h2>HANDS-ON PROJECTS</h2>
-        <div class="projects mx-3">
-          <div class="col-12">
-            <div class="card mt-2 mb-5">
+        <h3>Developer Project</h3>
+        <div class="projects mx-3 col-12">
+          <div class="project-grid">
+
+            <!-- ASP.NET Project-->
+            <div class="project-card">
+              <img src="images/CarLoan.png" alt="Car Loan Calculator" class="project-img mb-2" />
               <h5 class="card-title">ASP.NET - Car Loan Calculator</h5>
-              <img src="images/CarLoan.png" alt="Car Loan Calculator" class="img-thumbnail me-4 ms-4 mb-2" />
               <p class="card-text">
-                Built with ASP.NET and C#, this application helps users calculate car loan payments across three different plans by adjusting loan amount, interest rate, tax, and duration.
+                Built with ASP.NET and C#, this application helps users calculate car loan payments across three
+                different plans by adjusting loan amount, interest rate, tax, and duration.
               </p>
+              <span class="project-tag">ASP.NET</span>
+              <span class="project-tag">C#</span>
+              <span class="project-tag">Javascript</span>
+              <div>
+                <a href="https://github.com/irmnt/CarLoanCalculator" class="project-btn" target="_blank">Github</a>
+              </div>
             </div>
-            <div class="card mt-2 mb-5">
+
+            <!-- Othello Project -->
+            <div class="project-card">
+              <img src="images/Othello.png" alt="Java Othello" class="project-img mb-2" />
               <h5 class="card-title">Java - Othello Game</h5>
-              <img src="images/Othello.png" alt="Java Othello" class="img-thumbnail me-4 ms-4 mb-2" />
               <p class="card-text">
-                A console-based two-player game with move validation, automatic piece flipping, and game-over logic, created for learning algorithmic flow and Java object design.
+                A console-based two-player game with move validation, automatic piece flipping, and game-over logic,
+                created for learning algorithmic flow and Java object design.
               </p>
+              <span class="project-tag">Java</span>
+              <div>
+                <a href="https://github.com/irmnt/JavaOthelloGame" class="project-btn" target="_blank">Github</a>
+              </div>
+            </div>
+
+            <!-- Portfolio Project -->
+            <div class="project-card">
+              <img src="images/portfolio.png" alt="portfolio" class="project-img mb-2" />
+              <h5 class="card-title">Web Portfolio</h5>
+              <p class="card-text">
+                My portfolio website featuring my projects and skills. Built with HTML, CSS, and JavaScript.
+              </p>
+              <span class="project-tag">HTML</span>
+              <span class="project-tag">CSS</span>
+              <span class="project-tag">Bootstrap</span>
+              <span class="project-tag">Javascript</span>
+              <div>
+                <a href="https://github.com/irmnt/Portfolio" class="project-btn" target="_blank">Github</a>
+              </div>
             </div>
           </div>
         </div>
 
-        <h3>Cloud & Infrastructure Projects</h3>
-        <div class="projects mx-3">
-          <div class="col-12">
-            <div class="project-grid">
-              <!-- Windows Server Project -->
-              <div class="project-card">
-                <div class="project-header">
-                  <span class="project-tag">WindowsServer</span>
-                  <h3>Enterprise Infrastructure Deployment</h3>
-                </div>
-                <p>
-                  Deployed a secure Windows Server Core domain (<code>contoso.local</code>) with Active Directory, Group Policy, DHCP, DNS, Hyper-V, and WDS.
-                </p>
-                <ul class="project-list">
-                  <li><strong>AD & GPO:</strong> Server Core setup, ADDS configuration, password policies via Group Policy.</li>
-                  <li><strong>Network Services:</strong> DHCP with multiple scopes, DNS with forwarding.</li>
-                  <li><strong>Storage & Virtualization:</strong> iSCSI provisioning, Hyper-V VMs, and replication.</li>
-                  <li><strong>Automation:</strong> WDS deployment with GPO rules for zero-touch provisioning.</li>
-                </ul>
+        <h3 class="mt-5">Cloud & Infrastructure Projects</h3>
+        <div class="projects mx-3 col-12">
+          <div class="project-grid">
+            <!-- Windows Server Project -->
+            <div class="project-card">
+              <div class="project-header">
+                <span class="project-tag">WindowsServer</span>
+                <h3>Enterprise Infrastructure Deployment</h3>
               </div>
-
-              <!-- Microsoft 365 Project -->
-              <div class="project-card">
-                <div class="project-header">
-                  <span class="project-tag">M365</span>
-                  <h3>Microsoft 365 Environment Implementation</h3>
-                </div>
-                <p>
-                  Designed a complete Microsoft 365 ecosystem for a simulated mid-sized company (TechSolutions Inc.) to support 300 users across identity, collaboration, and security.
-                </p>
-                <ul class="project-list">
-                  <li><strong>Users & Permissions:</strong> Imported users, assigned licenses, configured Office 365 Groups.</li>
-                  <li><strong>Tools:</strong> Deployed SharePoint, OneDrive, Viva Engage for internal comms.</li>
-                  <li><strong>Security:</strong> Enabled Defender, DLP alerts, message encryption, and audit logs.</li>
-                  <li><strong>Documentation:</strong> Delivered handoff documentation and stakeholder presentation.</li>
-                </ul>
-              </div>
+              <p class="card-text">
+                Deployed a secure Windows Server Core domain (contoso.local) with Active Directory, Group Policy, DHCP,
+                DNS, Hyper-V, and WDS.
+              </p>
+              <ul class="project-list">
+                <li><strong>AD & GPO:</strong> Server Core setup, ADDS configuration, password policies via Group
+                  Policy.</li>
+                <li><strong>Network Services:</strong> DHCP with multiple scopes, DNS with forwarding.</li>
+                <li><strong>Storage & Virtualization:</strong> iSCSI provisioning, Hyper-V VMs, and replication.</li>
+                <li><strong>Automation:</strong> WDS deployment with GPO rules for zero-touch provisioning.</li>
+              </ul>
             </div>
+
+            <!-- Microsoft 365 Project -->
+            <div class="project-card">
+              <div class="project-header">
+                <span class="project-tag">M365</span>
+                <h3>Microsoft 365 Environment Implementation</h3>
+              </div>
+              <p class="card-text">
+                Designed a complete Microsoft 365 ecosystem for a simulated mid-sized company (TechSolutions Inc.) to
+                support 300 users across identity, collaboration, and security.
+              </p>
+              <ul class="project-list">
+                <li><strong>Users & Permissions:</strong> Imported users, assigned licenses, configured Office 365
+                  Groups.</li>
+                <li><strong>Tools:</strong> Deployed SharePoint, OneDrive, Viva Engage for internal comms.</li>
+                <li><strong>Security:</strong> Enabled Defender, DLP alerts, message encryption, and audit logs.</li>
+                <li><strong>Documentation:</strong> Delivered handoff documentation and stakeholder presentation.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <h3 class="mt-5">Upcoming Project</h3>
+        <div class="projects mx-3 col-12">
+          <div class="project-grid">
+
+            <!-- Project-->
+            <div class="project-card">
+              <h5 class="card-title">React - To Do Manager</h5>
+              <p>A flexible todo list using react</p>
+              <a class="project-btn" href="#" target="_blank">Coming Soon..</a>
+            </div>
+            <div class="project-card">
+              <h5 class="card-title">Python - Image Processor</h5>
+              <p>Image PRocessor for Galaxy Classification</p>
+              <a class="project-btn" href="#" target="_blank">Coming Soon..</a>
+            </div>
+
           </div>
         </div>
       </div>
     </section>
 
-        <!-- Skills Section -->
-        <section id="skills" class="section">
-            <div class="page container-fluid">
-                <h2>TECHNICAL SKILLS</h2>
-                <h4>Frontend</h4>
-                <div class="skill-icons">
-                    <div class="skill-item"><img
-                            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg"
-                            alt="JavaScript" /><span>JavaScript</span></div>
-                    <div class="skill-item"><img
-                            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg"
-                            alt="TypeScript" /><span>TypeScript</span></div>
-                    <div class="skill-item"><img
-                            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg"
-                            alt="React.js" /><span>React.js</span></div>
-                    <div class="skill-item"><img
-                            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/redux/redux-original.svg"
-                            alt="Redux" /><span>Redux</span></div>
-                    <div class="skill-item"><img
-                            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg"
-                            alt="HTML5" /><span>HTML</span></div>
-                    <div class="skill-item"><img
-                            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg"
-                            alt="CSS3" /><span>CSS</span></div>
-                    <div class="skill-item"><img
-                            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg"
-                            alt="Bootstrap" /><span>Bootstrap</span></div>
-                </div>
+    <!-- Skills Section -->
+    <section id="skills" class="section">
+      <div class="page container-fluid col-9">
+        <h2>TECHNICAL SKILLS</h2>
+        <h4>Frontend</h4>
+        <div class="skill-icons">
+          <div class="skill-item"><img
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg"
+              alt="JavaScript" /><span>JavaScript</span></div>
+          <div class="skill-item"><img
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg"
+              alt="TypeScript" /><span>TypeScript</span></div>
+          <div class="skill-item"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg"
+              alt="React.js" /><span>React.js</span></div>
+          <div class="skill-item"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/redux/redux-original.svg"
+              alt="Redux" /><span>Redux</span></div>
+          <div class="skill-item"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg"
+              alt="HTML5" /><span>HTML</span></div>
+          <div class="skill-item"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg"
+              alt="CSS3" /><span>CSS</span></div>
+          <div class="skill-item"><img
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg"
+              alt="Bootstrap" /><span>Bootstrap</span></div>
+        </div>
 
-                <h4>Backend</h4>
-                <div class="skill-icons">
-                    <div class="skill-item"><img
-                            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg"
-                            alt="Python" /><span>Python</span></div>
-                    <div class="skill-item"><img
-                            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg"
-                            alt="Java" /><span>Java</span></div>
-                    <div class="skill-item"><img
-                            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/csharp/csharp-original.svg"
-                            alt="C#" /><span>C#</span></div>
-                    <div class="skill-item"><img
-                            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/dot-net/dot-net-original.svg"
-                            alt="ASP.NET" /><span>ASP.NET</span></div>
-                    <div class="skill-item"><i class="fas fa-plug"></i><span>REST APIs</span></div>
-                    <div class="skill-item"><img
-                            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/numpy/numpy-original.svg"
-                            alt="NumPy" /><span>NumPy</span></div>
-                    <div class="skill-item"><img
-                            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tomcat/tomcat-original.svg"
-                            alt="Tomcat" /><span>Tomcat</span></div>
-                </div>
+        <h4>Backend</h4>
+        <div class="skill-icons">
+          <div class="skill-item"><img
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg"
+              alt="Python" /><span>Python</span></div>
+          <div class="skill-item"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg"
+              alt="Java" /><span>Java</span></div>
+          <div class="skill-item"><img
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/csharp/csharp-original.svg"
+              alt="C#" /><span>C#</span></div>
+          <div class="skill-item"><img
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/dot-net/dot-net-original.svg"
+              alt="ASP.NET" /><span>ASP.NET</span></div>
+          <div class="skill-item"><i class="fas fa-plug"></i><span>REST APIs</span></div>
+          <div class="skill-item"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/numpy/numpy-original.svg"
+              alt="NumPy" /><span>NumPy</span></div>
+          <div class="skill-item"><img
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tomcat/tomcat-original.svg"
+              alt="Tomcat" /><span>Tomcat</span></div>
+        </div>
 
-                <h4>Cloud & Infrastructure</h4>
-                <div class="skill-icons">
-                    <div class="skill-item"><img
-                            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/azure/azure-original.svg"
-                            alt="Microsoft Azure" /><span>Microsoft Azure</span></div>
-                    <div class="skill-item"><img src="images/skills/Microsoft-365.svg"></img><span>Microsoft
-                            365</span></div>
-                    <div class="skill-item"><img src="images/skills/aws-2.svg" alt="AWS" /><span>AWS</span>
-                    </div>
-                    <div class="skill-item"><img
-                            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/windows8/windows8-original.svg"
-                            alt="Windows Server" /><span>Windows Server</span></div>
-                    <div class="skill-item"><img src="images/skills/OKTA.svg"></img><span>Okta</span></div>
-                    <div class="skill-item"><img src="images/skills/OKTA.svg"></img><span>Okta Workflows</span>
-                    </div>
-                </div>
+        <h4>Cloud & Infrastructure</h4>
+        <div class="skill-icons">
+          <div class="skill-item"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/azure/azure-original.svg"
+              alt="Microsoft Azure" /><span>Microsoft Azure</span></div>
+          <div class="skill-item"><img src="images/skills/Microsoft-365.svg"></img><span>Microsoft
+              365</span></div>
+          <div class="skill-item"><img src="images/skills/aws-2.svg" alt="AWS" /><span>AWS</span>
+          </div>
+          <div class="skill-item"><img
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/windows8/windows8-original.svg"
+              alt="Windows Server" /><span>Windows Server</span></div>
+          <div class="skill-item"><img src="images/skills/OKTA.svg"></img><span>Okta</span></div>
+          <div class="skill-item"><img src="images/skills/OKTA.svg"></img><span>Okta Workflows</span>
+          </div>
+        </div>
 
-                <h4>Database</h4>
-                <div class="skill-icons">
-                    <div class="skill-item"><img
-                            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg"
-                            alt="MySQL" /><span>MySQL</span></div>
-                    <div class="skill-item"><img
-                            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/microsoftsqlserver/microsoftsqlserver-plain.svg"
-                            alt="Microsoft SQL Server" /><span>Microsoft SQL Server</span></div>
-                </div>
+        <h4>Database</h4>
+        <div class="skill-icons">
+          <div class="skill-item"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg"
+              alt="MySQL" /><span>MySQL</span></div>
+          <div class="skill-item"><img
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/microsoftsqlserver/microsoftsqlserver-plain.svg"
+              alt="Microsoft SQL Server" /><span>Microsoft SQL Server</span></div>
+        </div>
 
-                <h4>Tools & Platforms</h4>
-                <div class="skill-icons">
-                    <div class="skill-item"><img
-                            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg"
-                            alt="Git" /><span>Git</span></div>
-                    <div class="skill-item"><img
-                            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg"
-                            alt="GitHub" /><span>GitHub</span></div>
-                    <div class="skill-item"><img
-                            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/gitlab/gitlab-original.svg"
-                            alt="GitLab" /><span>GitLab</span></div>
-                    <div class="skill-item"><img
-                            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg"
-                            alt="VS Code" /><span>VS Code</span></div>
-                    <div class="skill-item"><img
-                            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/eclipse/eclipse-original.svg"
-                            alt="Eclipse" /><span>Eclipse</span></div>
-                    <div class="skill-item"><img
-                            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/visualstudio/visualstudio-plain.svg"
-                            alt="Visual Studio" /><span>Visual Studio</span></div>
-                </div>
-        </section>
+        <h4>Tools & Platforms</h4>
+        <div class="skill-icons">
+          <div class="skill-item"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg"
+              alt="Git" /><span>Git</span></div>
+          <div class="skill-item"><img
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg"
+              alt="GitHub" /><span>GitHub</span></div>
+          <div class="skill-item"><img
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/gitlab/gitlab-original.svg"
+              alt="GitLab" /><span>GitLab</span></div>
+          <div class="skill-item"><img
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg"
+              alt="VS Code" /><span>VS Code</span></div>
+          <div class="skill-item"><img
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/eclipse/eclipse-original.svg"
+              alt="Eclipse" /><span>Eclipse</span></div>
+          <div class="skill-item"><img
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/visualstudio/visualstudio-plain.svg"
+              alt="Visual Studio" /><span>Visual Studio</span></div>
+        </div>
+    </section>
 
-        <!-- Contact Section -->
-        <section id="contact" class="section">
-            <div class="page">
-                <h2>CONTACT</h2>
-                <p>Feel free to reach out via any of the platforms below!</p>
+    <!-- Contact Section -->
+    <section id="contact" class="section">
+      <div class="page">
+        <h2>CONTACT</h2>
+        <p>Feel free to reach out via any of the platforms below!</p>
 
-                <div class="contact-icons">
-                    <a href="https://github.com/irmnt" target="_blank" aria-label="GitHub">
-                        <i class="fab fa-github"></i>
-                    </a>
-                    <a href="https://www.linkedin.com/in/irumi-kikuchi" target="_blank" aria-label="LinkedIn">
-                        <i class="fab fa-linkedin"></i>
-                    </a>
-                    <a href="mailto:irumikikuchi@gmail.com" aria-label="Email">
-                        <i class="fas fa-envelope"></i>
-                    </a>
-                </div>
-            </div>
-        </section>
-    </main>
+        <div class="contact-icons">
+          <a href="https://github.com/irmnt" target="_blank" aria-label="GitHub">
+            <i class="fab fa-github"></i>
+          </a>
+          <a href="https://www.linkedin.com/in/irumi-kikuchi" target="_blank" aria-label="LinkedIn">
+            <i class="fab fa-linkedin"></i>
+          </a>
+          <a href="mailto:irumikikuchi@gmail.com" aria-label="Email">
+            <i class="fas fa-envelope"></i>
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
 
-    <!-- Footer -->
-    <footer class="bg-dark text-white text-center py-3">
-        <p>&copy; 2025 Irumi Kikuchi</p>
-    </footer>
+  <!-- Footer -->
+  <footer class="bg-dark text-white text-center py-3">
+    <p>&copy; 2025 Irumi Kikuchi</p>
+  </footer>
 
-    <!-- Bootstrap JS -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="script.js"></script>
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="script.js"></script>
 </body>
 
 </html>
