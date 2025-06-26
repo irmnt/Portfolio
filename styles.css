@@ -1,4 +1,3 @@
-
 /**
     COLOR SCHEME
     Base        : rgb(60, 110, 110)
@@ -23,30 +22,13 @@ body {
 
 h1 {
     font-size: 5rem;
-    margin-bottom: 50px;
-    font-weight:600;
+    font-weight: 600;
 }
 
 h2,
 h3 {
     margin-bottom: 20px;
     font-weight: 600;
-}
-
-h4 {
-    text-align: left;
-    font-weight: 600;
-    opacity: 0.8;
-    padding-top: 30px;
-    padding-bottom: 10px;
-}
-
-strong {
-    color: darkcyan;
-}
-
-p {
-    font-weight: 550;
 }
 
 header {
@@ -105,13 +87,23 @@ footer {
 
     background-attachment: fixed;
     background-size: cover;
+    background-position: center center;
+    transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+}
 
+@media (max-width: 768px) {
+    body {
+        background-size: contain;
+        background-position: top center;
+        background-attachment: scroll;
+    }
 }
 
 /* Dark mode */
 body.dark-mode {
     background-color: rgb(50, 50, 50);
     color: rgb(160, 190, 190);
+    transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
 }
 
 /* All Section  */
@@ -154,6 +146,11 @@ body.dark-mode {
     padding-top: 50px;
 }
 
+.job-field {
+    font-size: 1.2rem;
+    position: center;
+}
+
 #top li a {
     text-decoration: none;
     transition: color 0.3s ease;
@@ -174,6 +171,7 @@ body.dark-mode #top li a:hover {
     text-shadow: 1px 1px 1px #ddd;
 }
 
+/** About Section */
 .profile-img {
     width: 200px;
     height: auto;
@@ -182,9 +180,26 @@ body.dark-mode #top li a:hover {
 }
 
 
+#about p {
+    text-shadow: 1px 1px 0px #ddd;
+    font-size: 1.1rem;
+    font-weight: 550;
+}
+
+body.dark-mode #about p {
+    text-shadow: 1px 1px 0px rgb(15, 45, 45);
+}
+
+#about strong {
+    color: rgb(200, 0, 0);
+}
+
+body.dark-mode #about strong {
+    color: rgb(0, 200, 200);
+}
+
 /** Project Section */
 .projects {
-    display: flex;
     justify-content: center;
 }
 
@@ -192,6 +207,14 @@ body.dark-mode #top li a:hover {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(auto, 600px));
     gap: 1.5rem;
+}
+
+.project-grid h4 {
+    text-align: left;
+    font-weight: 600;
+    opacity: 0.8;
+    padding-top: 30px;
+    padding-bottom: 10px;
 }
 
 .project-card {
@@ -233,18 +256,58 @@ body.dark-mode #top li a:hover {
     padding: 0;
 }
 
+.img-back {
+    display: block;
+    filter: brightness(0.7);
+}
+
+.img-front {
+    position: absolute;
+    top: 5%;
+    left: 30%;
+    width: 40%;
+    border-radius: 30px;
+    box-shadow: -7px -20px 7px -10px rgba(26, 68, 111, 0.9) inset,
+        0px 30px 5px -10px rgba(0, 0, 0, 0.3),
+        inset 0 0 10px 0px #fff,
+        inset 0 0 25px 0px #fff;
+    /* opacity: 0; */
+}
+
+/* 
+.crystal-frame {
+    position: absolute;
+    content: "";
+    top:5%;
+    left: 30%;
+    width: 100px;
+  height: 100px;
+  border-radius: 30%;
+  display: inline-block;
+  background: radial-gradient(13% 5% at 45% 5%, #fff 20%, transparent), radial-gradient(20% 20% at 90% 95%, #53FAFF 15%, transparent);
+  box-shadow: -2px 65px 8px -40px #dbf2ff;
+  transform: rotate(-33deg);
+  position: absolute;
+}  */
+
+.project-card h4, 
+.project-card h5 {
+    font-size: 1.2rem;
+    margin: 0.5rem;
+}
+
 .project-card p {
     font-size: 0.95rem;
-    margin-bottom: 0.5rem;
+    margin: 0.5rem;
     padding-left: 1.2rem;
     padding-right: 1.2rem;
 }
 
 .project-list {
-    margin-top: 0;
-    margin-left: 1.5rem;
-    margin-right: 1.5rem;
-    list-style-type: disc;
+    margin-top: 1.5rem;
+    margin-left: 5rem;
+    margin-right: 5rem;
+    list-style-type: none;
     font-size: 0.9rem;
     line-height: 1.5;
 }
@@ -253,11 +316,29 @@ body.dark-mode #top li a:hover {
     color: rgb(160, 190, 190);
 }
 
+.project-list li {
+    margin: 0.5rem;
+}
+
 .project-btn {
     display: inline-block;
     padding: 5px 10px;
     margin-bottom: 0.5rem;
-    background-color: rgb(60, 110, 110);
+    background-color: rgb(85, 85, 85);
+    color: #ddd;
+    text-decoration: none;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+.upcoming-btn {
+    display: inline-block;
+    padding: 5px 10px;
+    margin-bottom: 0.5rem;
+    background: rgb(200, 120, 120);
     color: #ddd;
     text-decoration: none;
     border: none;
@@ -268,7 +349,7 @@ body.dark-mode #top li a:hover {
 }
 
 .project-btn:hover {
-    background-color: rgb(110, 150, 150);;
+    background-color: rgb(110, 150, 150);
 }
 
 
