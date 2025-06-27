@@ -60,3 +60,28 @@ document.addEventListener('DOMContentLoaded', () => {
     animateSectionsOnScroll(); // initial check
     window.addEventListener('scroll', animateSectionsOnScroll);
 });
+
+// function toggleList(button) {
+//     const container = button.nextElementSibling;
+//     const isCollapsed = container.classList.toggle('collapsed');
+//     button.textContent = isCollapsed ? 'See More' : 'Close';
+//   }
+
+function toggleList(button) {
+    const container = button.nextElementSibling;
+
+    if (container.classList.contains('expanded')) {
+      // Collapse
+      container.style.height = container.scrollHeight + 'px'; // set to full height first
+      requestAnimationFrame(() => {
+        container.style.height = '0';
+        container.classList.remove('expanded');
+      });
+      button.textContent = 'Show More';
+    } else {
+      // Expand
+      container.classList.add('expanded');
+      container.style.height = container.scrollHeight + 'px';
+      button.textContent = 'Show Less';
+    }
+  }

@@ -154,18 +154,28 @@
               <div class="project-header">
                 <h5>Enterprise Windows Server Infrastructure Deployment</h5>
               </div>
-              <ul class="project-list">
-                <li><strong>Scenario-Based Setup:</strong><br> Simulated infrastructure for a global pharmaceutical
-                  company with high privacy and security demands.</li>
-                <li><strong>Domain Services:</strong><br> Installed Active Directory Domain Services on Server Core and
-                  enforced 30-day password policies via Group Policy.</li>
-                <li><strong>DHCP & DNS Configuration:</strong><br> Created four DHCP scopes, one superscope, one
-                  multicast scope, and a DNS forwarder to 8.8.8.8.</li>
-                <li><strong>Storage & Virtualization:</strong><br> Built a storage pool, iSCSI target, and configured
-                  Hyper-V on multiple servers with a working replica.</li>
-                <li><strong>Deployment Services:</strong><br> Installed and configured Windows Deployment Services
-                  (WDS), enforced settings through GPO, and restricted boot options.</li>
-              </ul>
+
+              <button class="toggle-btn" onclick="toggleList(this)">Show More</button>
+
+              <div class="project-list-container collapsed">
+                <ul class="project-list">
+                  <li><strong>Scenario-Based Setup:</strong><br>
+                     Simulated infrastructure for a mid-sized company<br>
+                      with high privacy and security demands.</li>
+                  <li><strong>Domain Services:</strong><br>
+                     Installed Active Directory Domain Services on Server Core <br>
+                    and enforced 30-day password policies via Group Policy.</li>
+                  <li><strong>DHCP & DNS Configuration:</strong><br>
+                     Created DHCP scopes, a superscope, a multicast scope,<br>
+                      and a DNS forwarder</li>
+                  <li><strong>Storage & Virtualization:</strong><br>
+                     Built a storage pool, iSCSI target, and configured <br>
+                    Hyper-V on multiple servers with a working replica.</li>
+                  <li><strong>Deployment Services:</strong><br>
+                     Installed and configured Windows Deployment Services(WDS),<br>
+                      enforced settings through GPO, and restricted boot options.</li>
+                </ul>
+              </div>
 
               <span class="project-tag">WindowsServer</span>
             </div>
@@ -175,28 +185,44 @@
               <div class="project-header">
                 <h5>Microsoft 365 Environment Implementation and Management</h5>
               </div>
-              <p class="card-text">
-                Designed a complete Microsoft 365 ecosystem for a simulated mid-sized company (TechSolutions Inc.) to
-                support 300 users across identity, collaboration, and security.
-              </p>
-              <ul class="project-list">
-                <li><strong>Organization Profile Customization:</strong><br> Configured company branding, themes, and
-                  helpdesk info in Microsoft 365 admin center.</li>
-                <li><strong>PowerShell Automation:</strong><br> Installed M365 PowerShell module, created users, and
-                  assigned licenses via scripting.</li>
-                <li><strong>Office Apps & Email:</strong><br> Deployed Microsoft 365 Apps on VMs, tested email delivery
-                  using Exchange Online shared mailboxes and distribution lists.</li>
-                <li><strong>Exchange & Security:</strong><br> Managed shared mailboxes, distribution groups, and malware
-                  policies through Exchange Admin Center.</li>
-                <li><strong>Collaboration & Compliance:</strong><br> Set up SharePoint sites, document libraries, and
-                  sharing policies tailored for organizational needs.</li>
-                <li><strong>User & Group Management:</strong><br> Bulk imported users, configured profiles, and created
-                  Office 365 groups for departments with specific permissions.</li>
-                <li><strong>Security Implementation:</strong><br> Enabled Microsoft Defender features, data encryption,
-                  and configured anti-phishing and DLP policies.</li>
-                <li><strong>Monitoring & Reporting:</strong><br> Enabled audit logs, configured alert policies for
-                  suspicious activity, and scheduled usage reports for IT admins.</li>
-              </ul>
+
+              <button class="toggle-btn" onclick="toggleList(this)">Show More</button>
+
+              <div class="project-list-container collapsed">
+                <ul class="project-list">
+                  <li><strong>Organization Profile Customization:</strong><br>
+                    Configured company branding, themes, <br>
+                    and helpdesk info in Microsoft 365 admin center.</li>
+
+                  <li><strong>PowerShell Automation:</strong><br>
+                    Installed M365 PowerShell module, created users, <br>
+                    and assigned licenses via scripting.</li>
+
+                  <li><strong>Office Apps & Email:</strong><br>
+                    Deployed Microsoft 365 Apps on VMs, tested email delivery <br>
+                    using Exchange Online shared mailboxes and distribution lists.</li>
+
+                  <li><strong>Exchange & Security:</strong><br>
+                    Managed shared mailboxes, distribution groups, <br>
+                    and malware policies through Exchange Admin Center.</li>
+
+                  <li><strong>Collaboration & Compliance:</strong><br>
+                    Set up SharePoint sites, document libraries, <br>
+                    and sharing policies tailored for organizational needs.</li>
+
+                  <li><strong>User & Group Management:</strong><br>
+                    Bulk imported users, configured profiles, and created <br>
+                    Office 365 groups for departments with specific permissions.</li>
+
+                  <li><strong>Security Implementation:</strong><br>
+                    Enabled Microsoft Defender features, data encryption, <br>
+                    and configured anti-phishing and DLP policies.</li>
+
+                  <li><strong>Monitoring & Reporting:</strong><br>
+                    Enabled audit logs, configured alert policies for suspicious activity,<br>
+                    and scheduled usage reports for IT admins.</li>
+                </ul>
+              </div>
               <span class="project-tag">M365</span>
             </div>
 
@@ -205,19 +231,32 @@
               <div class="project-header">
                 <h5>Azure Cloud Administration and Security Project</h5>
               </div>
-              <ul class="project-list">
-                <li><strong>Deployed & Managed:</strong><br> Configured virtual machines, virtual networks, and storage
-                  accounts in Microsoft Azure.</li>
-                <li><strong>Identity & Access:</strong><br> Managed users, groups, and role-based access control (RBAC)
-                  using Microsoft Entra ID.</li>
-                <li><strong>Security Configuration:</strong><br> Applied Conditional Access, network security groups
-                  (NSGs),
-                  firewalls, and Key Vault for secure operations.</li>
-                <li><strong>Monitoring & Compliance:</strong><br> Enabled Azure Monitor, activity logs, and Defender for
-                  Cloud to track usage and protect resources.</li>
-                <li><strong>Automation & Resilience:</strong><br> Utilized templates and backup solutions to support
-                  scalability and disaster recovery planning.</li>
-              </ul>
+              <button class="toggle-btn" onclick="toggleList(this)">Show More</button>
+
+              <div class="project-list-container collapsed">
+                <ul class="project-list">
+                  <li><strong>Deployed & Managed:</strong><br>
+                     Configured virtual machines, virtual networks, <br>
+                     and storage accounts in Microsoft Azure.</li>
+
+                  <li><strong>Identity & Access:</strong><br>
+                     Managed users, groups, and role-based access control(RBAC) <br>
+                    using Microsoft Entra ID.</li>
+
+                  <li><strong>Security Configuration:</strong><br>
+                     Applied Conditional Access, network security groups(NSGs),<br>
+                    firewalls, and Key Vault for secure operations.</li>
+
+                  <li><strong>Monitoring & Compliance:</strong><br>
+                     Enabled Azure Monitor, activity logs, and Defender <br>
+                    for Cloud to track usage and protect resources.</li>
+
+                  <li><strong>Automation & Resilience:</strong><br>
+                     Utilized templates and backup solutions to support <br>
+                    scalability and disaster recovery planning.</li>
+
+                </ul>
+              </div>
               <span class="project-tag">Azure</span>
             </div>
           </div>
