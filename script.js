@@ -16,6 +16,7 @@ document.addEventListener('DOMContentLoaded', () => {
     // Scroll Animation
     const sections = document.querySelectorAll('section');
     const card = document.querySelectorAll('.project-card');
+    const skill = document.querySelectorAll('.skill-icons');
 
     function animateSectionsOnScroll() {
         const triggerPoint = window.innerHeight * 0.85;
@@ -39,6 +40,17 @@ document.addEventListener('DOMContentLoaded', () => {
                 card.classList.add('in-view');
             } else {
                 card.classList.remove('in-view');
+            }
+        });
+
+        // animation for skills items
+        skill.forEach(skill => {
+            const top = skill.getBoundingClientRect().top;
+
+            if (top < triggerPoint) {
+                skill.classList.add('in-view');
+            } else {
+                skill.classList.remove('in-view');
             }
         });
 
