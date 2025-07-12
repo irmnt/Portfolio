@@ -85,6 +85,7 @@ footer {
     background-color: rgb(160, 190, 190);
     background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 2000 1500'%3E%3Cdefs%3E%3Cellipse fill='none' stroke-width='3.3' stroke-opacity='0.3' id='a' rx='150' ry='1100'/%3E%3C/defs%3E%3Cg transform='scale(0.766)' style='transform-origin:center'%3E%3Cg style='transform-origin:center'%3E%3Cg transform='rotate(-160 0 0)' style='transform-origin:center'%3E%3Cg transform='translate(1000 750)'%3E%3Cuse stroke='%230f2d2d' href='%23a' transform='rotate(-60 0 0) scale(0.4)'/%3E%3Cuse stroke='%23163837' href='%23a' transform='rotate(-50 0 0) scale(0.5)'/%3E%3Cuse stroke='%231c4341' href='%23a' transform='rotate(-40 0 0) scale(0.6)'/%3E%3Cuse stroke='%23224d4b' href='%23a' transform='rotate(-30 0 0) scale(0.7)'/%3E%3Cuse stroke='%23295855' href='%23a' transform='rotate(-20 0 0) scale(0.8)'/%3E%3Cuse stroke='%232f635f' href='%23a' transform='rotate(-10 0 0) scale(0.9)'/%3E%3Cuse stroke='%23366d68' href='%23a' transform=''/%3E%3Cuse stroke='%233c6e6e' href='%23a' transform='rotate(10 0 0) scale(1.1)'/%3E%3Cuse stroke='%23477474' href='%23a' transform='rotate(20 0 0) scale(1.2)'/%3E%3Cuse stroke='%23517b7a' href='%23a' transform='rotate(30 0 0) scale(1.3)'/%3E%3Cuse stroke='%235b8180' href='%23a' transform='rotate(40 0 0) scale(1.4)'/%3E%3Cuse stroke='%23658886' href='%23a' transform='rotate(50 0 0) scale(1.5)'/%3E%3Cuse stroke='%236f8e8c' href='%23a' transform='rotate(60 0 0) scale(1.6)'/%3E%3Cuse stroke='%23799492' href='%23a' transform='rotate(70 0 0) scale(1.7)'/%3E%3Cuse stroke='%23839b98' href='%23a' transform='rotate(80 0 0) scale(1.8)'/%3E%3Cuse stroke='%238da19e' href='%23a' transform='rotate(90 0 0) scale(1.9)'/%3E%3Cuse stroke='%2397a7a4' href='%23a' transform='rotate(100 0 0) scale(2)'/%3E%3Cuse stroke='%2397aba7' href='%23a' transform='rotate(110 0 0) scale(2.1)'/%3E%3Cuse stroke='%239cb4ae' href='%23a' transform='rotate(120 0 0) scale(2.2)'/%3E%3Cuse stroke='%23a0bebe' href='%23a' transform='rotate(130 0 0) scale(2.3)'/%3E%3C/g%3E%3C/g%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
     background-size: cover;
+    background-repeat: no-repeat;
     background-attachment: fixed;
     background-position-x: center;
     z-index: -1;
@@ -93,7 +94,7 @@ footer {
 
 @media (max-width: 768px) {
     body {
-        background-size: contain;
+        background-size: 100% auto;
         background-position: top center;
         background-attachment: scroll;
     }
