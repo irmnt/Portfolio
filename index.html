@@ -59,29 +59,52 @@
           <img src="images/profile.JPEG" class="img-fluid profile-img" alt="Profile" />
         </div>
         <h2>ABOUT ME</h2>
-        <p>
-          Hi! My name is Irumi Kikuchi — a dedicated <strong>software engineer</strong><br /> with over
-          two and a half years of experience in
-          <strong>full-stack</strong> development. My work spans
-          <strong>front-end</strong> and <strong>back-end technologies</strong>, <strong>RESTful APIs</strong>, and
-          <strong>no-code platforms</strong>, with a strong focus on delivering
-          <strong>reliable</strong>, <strong>user-friendly systems</strong>.
-        </p>
-        <p>
-          With a hands-on approach to both
-          <strong>development</strong> and <strong>problem-solving</strong>, I’ve
-          contributed to projects involving <strong>JavaScript</strong>,
-          <strong>TypeScript</strong>, <strong>C#</strong>, <strong>Python</strong> assigned
-          <strong>React</strong>. I’m also
-          continuing my education in <strong>cloud computing</strong> and deepening
-          my knowledge in <strong>AI</strong> and
-          <strong>machine learning</strong> to grow into more advanced technical roles.
-        </p>
-        <p>
-          I thrive in <strong>collaborative environments</strong> and enjoy building
-          <strong>practical</strong>, <strong>scalable solutions</strong> that align
-          with real-world needs.
-        </p>
+        <div class="about-card">
+          <p>
+            Hi! My name is Irumi Kikuchi — a dedicated <strong>software engineer</strong><br /> with over
+            two and a half years of experience in
+            <strong>full-stack</strong> development. My work spans
+            <strong>front-end</strong> and <strong>back-end technologies</strong>, <strong>RESTful APIs</strong>, and
+            <strong>no-code platforms</strong>, with a strong focus on delivering
+            <strong>reliable</strong>, <strong>user-friendly systems</strong>.
+          </p>
+          <p>
+            With a hands-on approach to both
+            <strong>development</strong> and <strong>problem-solving</strong>, I’ve
+            contributed to projects involving <strong>JavaScript</strong>,
+            <strong>TypeScript</strong>, <strong>C#</strong>, <strong>Python</strong> assigned
+            <strong>React</strong>. I’m also
+            continuing my education in <strong>cloud computing</strong> and deepening
+            my knowledge in <strong>AI</strong> and
+            <strong>machine learning</strong> to grow into more advanced technical roles.
+          </p>
+          <p>
+            I thrive in <strong>collaborative environments</strong> and enjoy building
+            <strong>practical</strong>, <strong>scalable solutions</strong> that align
+            with real-world needs.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section id="service" class="section">
+      <div class="page">
+        <h2>WHAT I CAN DO?</h2>
+        <ul class="service-list">
+          <li class="service"><strong>Full-Stack Development</strong><br>
+            Build scalable and maintainable web applications using JavaScript, TypeScript, React, C#, and SQL.</li>
+          <li class="service"><strong>Cloud Fundamentals</strong><br>
+            Understand core cloud concepts and services across AWS and Azure, with hands-on practice in setting up basic
+            infrastructure and deployment pipelines.</li>
+          <li class="service"><strong>REST API Integration</strong><br>
+            Develop and integrate RESTful APIs for seamless communication between frontend and backend systems.</li>
+          <li class="service"><strong>No-Code & Automation Tools</strong><br>
+            Use platforms like Okta Workflows and Microsoft 365 to automate business processes and streamline workflows.
+          </li>
+          <li class="service"><strong>Team Collaboration</strong><br>
+            Communicate effectively in cross-functional teams and contribute positively to agile development processes.
+          </li>
+        </ul>
       </div>
     </section>
 
@@ -155,25 +178,28 @@
                 <h5>Enterprise Windows Server Infrastructure Deployment</h5>
               </div>
 
-              <button class="toggle-btn" onclick="toggleList(this)">Show More</button>
+              <button class="toggle-btn" onclick="toggleList(this)">
+                <i class="bi bi-chevron-down"></i>
+                <span>Show More</span>
+              </button>
 
               <div class="project-list-container collapsed">
                 <ul class="project-list">
                   <li><strong>Scenario-Based Setup:</strong><br>
-                     Simulated infrastructure for a mid-sized company<br>
-                      with high privacy and security demands.</li>
+                    Simulated infrastructure for a mid-sized company<br>
+                    with high privacy and security demands.</li>
                   <li><strong>Domain Services:</strong><br>
-                     Installed Active Directory Domain Services on Server Core <br>
+                    Installed Active Directory Domain Services on Server Core <br>
                     and enforced 30-day password policies via Group Policy.</li>
                   <li><strong>DHCP & DNS Configuration:</strong><br>
-                     Created DHCP scopes, a superscope, a multicast scope,<br>
-                      and a DNS forwarder</li>
+                    Created DHCP scopes, a superscope, a multicast scope,<br>
+                    and a DNS forwarder</li>
                   <li><strong>Storage & Virtualization:</strong><br>
-                     Built a storage pool, iSCSI target, and configured <br>
+                    Built a storage pool, iSCSI target, and configured <br>
                     Hyper-V on multiple servers with a working replica.</li>
                   <li><strong>Deployment Services:</strong><br>
-                     Installed and configured Windows Deployment Services(WDS),<br>
-                      enforced settings through GPO, and restricted boot options.</li>
+                    Installed and configured Windows Deployment Services(WDS),<br>
+                    enforced settings through GPO, and restricted boot options.</li>
                 </ul>
               </div>
 
@@ -186,7 +212,10 @@
                 <h5>Microsoft 365 Environment Implementation and Management</h5>
               </div>
 
-              <button class="toggle-btn" onclick="toggleList(this)">Show More</button>
+              <button class="toggle-btn" onclick="toggleList(this)">
+                <i class="bi bi-chevron-down"></i>
+                <span>Show More</span>
+              </button>
 
               <div class="project-list-container collapsed">
                 <ul class="project-list">
@@ -231,28 +260,32 @@
               <div class="project-header">
                 <h5>Azure Cloud Administration and Security Project</h5>
               </div>
-              <button class="toggle-btn" onclick="toggleList(this)">Show More</button>
+              
+              <button class="toggle-btn" onclick="toggleList(this)">
+                <i class="bi bi-chevron-down"></i>
+                <span>Show More</span>
+              </button>
 
               <div class="project-list-container collapsed">
                 <ul class="project-list">
                   <li><strong>Deployed & Managed:</strong><br>
-                     Configured virtual machines, virtual networks, <br>
-                     and storage accounts in Microsoft Azure.</li>
+                    Configured virtual machines, virtual networks, <br>
+                    and storage accounts in Microsoft Azure.</li>
 
                   <li><strong>Identity & Access:</strong><br>
-                     Managed users, groups, and role-based access control(RBAC) <br>
+                    Managed users, groups, and role-based access control(RBAC) <br>
                     using Microsoft Entra ID.</li>
 
                   <li><strong>Security Configuration:</strong><br>
-                     Applied Conditional Access, network security groups(NSGs),<br>
+                    Applied Conditional Access, network security groups(NSGs),<br>
                     firewalls, and Key Vault for secure operations.</li>
 
                   <li><strong>Monitoring & Compliance:</strong><br>
-                     Enabled Azure Monitor, activity logs, and Defender <br>
+                    Enabled Azure Monitor, activity logs, and Defender <br>
                     for Cloud to track usage and protect resources.</li>
 
                   <li><strong>Automation & Resilience:</strong><br>
-                     Utilized templates and backup solutions to support <br>
+                    Utilized templates and backup solutions to support <br>
                     scalability and disaster recovery planning.</li>
 
                 </ul>

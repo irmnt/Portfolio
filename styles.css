@@ -63,7 +63,7 @@ footer {
 
 .button {
     background-color: rgb(50, 50, 50);
-    color: #ddd;
+    color: rgb(230, 245, 245);
     border: none;
     padding: 10px 20px;
     font-size: 16px;
@@ -121,7 +121,7 @@ body.dark-mode {
 
 /* Header */
 .nav-item .nav-link {
-    color: #ddd;
+    color: rgb(230, 245, 245);
     font-weight: 500;
     text-decoration: none;
     transition: color 0.3s ease;
@@ -160,7 +160,7 @@ body.dark-mode {
 }
 
 body.dark-mode #top li a:hover {
-    text-shadow: 1px 1px 1px #ddd;
+    text-shadow: 1px 1px 1px rgb(230, 245, 245);
 }
 
 /** About Section */
@@ -169,25 +169,63 @@ body.dark-mode #top li a:hover {
     height: auto;
     border-radius: 16px;
     object-fit: cover;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
 }
 
 
+.about-card {
+    background-color: rgb(85, 85, 85);
+    border: rgb(85, 85, 85);
+    border-radius: 12px;
+    overflow: hidden;
+    padding: 20px;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+}
+
 #about p {
-    text-shadow: 1px 1px 0px #ddd;
+    color: rgb(230, 245, 245);
     font-size: 1.1rem;
     font-weight: 550;
 }
 
-body.dark-mode #about p {
-    text-shadow: 1px 1px 0px rgb(15, 45, 45);
-}
-
 #about strong {
-    color: rgb(200, 0, 0);
+    color: rgb(0, 180, 180);
 }
 
-body.dark-mode #about strong {
-    color: rgb(0, 200, 200);
+/** Service Section */
+.service-list {
+    list-style-type: none;
+    margin-top: 1.5rem;
+    margin-left: 2rem;
+    margin-right: 2rem;
+    padding-left: 0;
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
+#service li {
+    color: rgb(230, 245, 245);
+    border: 1px solid rgb(60, 110, 110);
+    background-color: rgb(60, 110, 110);
+    margin: 1rem;
+    padding: 1rem;
+    border-radius: 12px;
+}
+
+#service strong {
+    color: rgb(180, 220, 220);
+    font-size: 1.2rem;
+}
+
+.service {
+    opacity: 0;
+    transform: translateY(100px);
+    transition: opacity 0.3s ease-out, transform 0.3s ease-out;
+}
+
+.service.in-view {
+    opacity: 1;
+    transform: translateY(0);
 }
 
 /** Project Section */
@@ -211,7 +249,7 @@ body.dark-mode #about strong {
 
 .project-card {
     background-color: rgb(30, 80, 80);
-    color: #ddd;
+    color: rgb(230, 245, 245);
     border: 1px solid rgb(30, 80, 80);
     box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
     border-radius: 12px;
@@ -307,7 +345,7 @@ body.dark-mode #about strong {
 }
 
 .project-list strong {
-    color: rgb(160, 190, 190);
+    color: rgb(100, 190, 190);
 }
 
 .project-list li {
@@ -318,8 +356,8 @@ body.dark-mode #about strong {
     display: inline-block;
     padding: 5px 10px;
     margin-bottom: 0.5rem;
-    background-color: rgb(85, 85, 85);
-    color: #ddd;
+    background-color: rgb(50, 50, 50);
+    color: rgb(230, 245, 245);
     text-decoration: none;
     border: none;
     border-radius: 6px;
@@ -337,8 +375,8 @@ body.dark-mode #about strong {
 }
 
 .toggle-btn {
-  background: rgb(85, 85, 85);
-  color: #ddd;
+  background: transparent;
+  color: rgb(230, 245, 245);
   border: none;
   padding: 3px 12px;
   cursor: pointer;
@@ -351,7 +389,7 @@ body.dark-mode #about strong {
     padding: 5px 10px;
     margin-bottom: 0.5rem;
     background: rgb(200, 120, 120);
-    color: #ddd;
+    color: rgb(230, 245, 245);
     text-decoration: none;
     border: none;
     border-radius: 6px;
@@ -374,6 +412,7 @@ body.dark-mode #about strong {
     display: grid;
     grid-template-columns: repeat(auto-fit, 75px);
     justify-items: center;
+    gap: 10px;
     padding-left: 30px;
     background-color: rgb(110, 150, 150);
     border-radius: 30px;
@@ -394,14 +433,14 @@ body.dark-mode #about strong {
     align-items: center;
     text-align: center;
     justify-content: center;
-    color: #ddd;
+    color: rgb(230, 245, 245);
     border-radius: 30px;
     width: 6rem;
     height: 6rem;
 }
 
 body.dark-mode .skill-item {
-    color: #ddd;
+    color: rgb(230, 245, 245);
 }
 
 .skill-item i {
@@ -423,7 +462,7 @@ body.dark-mode .skill-item {
 
 .skill-item:hover {
     transform: scale(1.1);
-    color: #ddd;
+    color: rgb(230, 245, 245);
     font-weight: bold;
 }
 
@@ -437,7 +476,7 @@ body.dark-mode .skill-item {
 }
 
 .contact-icons a {
-    color: #ddd;
+    color: rgb(230, 245, 245);
     transition: color 0.3s;
 }
 
