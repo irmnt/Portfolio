@@ -92,6 +92,13 @@ footer {
     transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
 }
 
+/* For iOS device */
+@supports (-webkit-touch-callout: none) {
+  .bg-container {
+    background-attachment: scroll !important;
+  }
+}
+
 /* Dark mode */
 body.dark-mode {
     background-color: rgb(50, 50, 50);
