@@ -456,6 +456,13 @@ body.dark-mode .skill-item {
     transition: transform 0.5s ease;
 }
 
+.skill-item svg {
+    width: 30px;
+    height: auto;
+    margin-bottom: 5px;
+    transition: transform 0.5s ease;
+}
+
 .skill-item span {
     font-size: 0.8rem;
 }
