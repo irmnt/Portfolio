@@ -410,7 +410,7 @@ body.dark-mode #top li a:hover {
 
 .skill-icons {
     display: grid;
-    grid-template-columns: repeat(auto-fit, 75px);
+    grid-template-columns: repeat(auto-fit, 60px);
     justify-items: center;
     gap: 10px;
     padding-left: 30px;
@@ -464,7 +464,7 @@ body.dark-mode .skill-item {
 }
 
 .skill-item span {
-    font-size: 0.8rem;
+    font-size: 0.7rem;
 }
 
 .skill-item:hover {
