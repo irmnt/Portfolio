@@ -413,7 +413,7 @@ body.dark-mode #top li a:hover {
     grid-template-columns: repeat(auto-fit, 60px);
     justify-items: center;
     gap: 10px;
-    padding-left: 10px;
+    padding-left: 1.5rem;
     padding-right: 10px;
     background-color: rgb(110, 150, 150);
     border-radius: 30px;
