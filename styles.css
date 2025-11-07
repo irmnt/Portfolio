@@ -31,52 +31,11 @@ h3 {
     font-weight: 600;
 }
 
-header {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    background-color: rgb(50, 50, 50);
-    padding: 15px 0;
-    z-index: 1000;
-}
-
-
 footer {
     background-color: rgb(50, 50, 50);
     padding: 20px 0;
     text-align: center;
     font-size: 0.9rem;
-}
-
-/* Header navigation */
-.navbar-nav .nav-link {
-    padding: 10px 15px;
-    font-weight: 500;
-    transition: color 0.3s;
-}
-
-.navbar-nav .nav-link:hover,
-.navbar-nav .nav-link.active {
-    border-bottom: 2px solid rgb(60, 110, 110);
-}
-
-.button {
-    background-color: rgb(50, 50, 50);
-    color: rgb(230, 245, 245);
-    border: none;
-    padding: 10px 20px;
-    font-size: 16px;
-    cursor: pointer;
-    border-radius: 5px;
-    transition: background-color 0.3s ease, transform 0.3s ease;
-}
-
-.page {
-    margin: 0 auto;
-    padding: 0 20px;
-    max-width: 800px;
-    flex-wrap: wrap;
 }
 
 /* Light Mode (Default) */
@@ -92,7 +51,7 @@ footer {
     transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
 }
 
-/* For iOS device */
+/* For iOS devices */
 @supports (-webkit-touch-callout: none) {
   .bg-container {
     background-attachment: scroll !important;
@@ -106,7 +65,14 @@ body.dark-mode {
     transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
 }
 
-/* All Section  */
+/*For  All Section  */
+.page {
+    margin: 0 auto;
+    padding: 0 20px;
+    max-width: 800px;
+    flex-wrap: wrap;
+}
+
 .section {
     width: 100%;
     min-height: 100vh;
@@ -120,6 +86,10 @@ body.dark-mode {
 }
 
 /* Header */
+.navbar-brand {
+    margin-left: 1rem;
+}
+
 .nav-item .nav-link {
     color: rgb(230, 245, 245);
     font-weight: 500;
@@ -133,35 +103,53 @@ body.dark-mode {
 }
 
 
+/** Header navigation */
+.navbar-nav .nav-link {
+    padding: 10px 15px;
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+.navbar-nav .nav-link:hover,
+.navbar-nav .nav-link.active {
+    border-bottom: 2px solid rgb(60, 110, 110);
+    font-weight: bold;
+}
+
+.button {
+    background-color: rgb(50, 50, 50);
+    color: rgb(230, 245, 245);
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+
 /* Top section */
 .list-inline {
     padding-top: 50px;
-}
-
-.job-field {
-    font-size: 1.2rem;
-    position: center;
 }
 
 #top li a {
     text-decoration: none;
     transition: color 0.3s ease;
     font-weight: 600;
-    font-size: 1.2rem;
+    font-size: 1.5rem;
     width: fit-content;
     margin: auto;
+    margin-bottom: 0.5rem;
 }
 
 #top li a:hover {
-    color: rgb(60, 110, 110);
+    color: rgb(230, 245, 245);
     font-weight: bold;
-    text-shadow: 1px 1px 1px rgb(85, 85, 85);
-    transition: transform 0.3s ease, color 0.3s ease;
+    text-shadow: 0.2rem 0.2rem 0.2rem rgb(60, 110, 110);
+    transition: transform 0.1s ease, color 0.1s ease;
 }
 
-body.dark-mode #top li a:hover {
-    text-shadow: 1px 1px 1px rgb(230, 245, 245);
-}
 
 /** About Section */
 .profile-img {
@@ -169,9 +157,8 @@ body.dark-mode #top li a:hover {
     height: auto;
     border-radius: 16px;
     object-fit: cover;
-    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+    box-shadow: 0.5rem 0.5rem 0.5rem rgba(50, 50, 50, 0.5);
 }
-
 
 .about-card {
     background-color: rgb(85, 85, 85);
@@ -184,7 +171,7 @@ body.dark-mode #top li a:hover {
 
 #about p {
     color: rgb(230, 245, 245);
-    font-size: 1.1rem;
+    font-size: 0.9rem;
     font-weight: 550;
 }
 
@@ -196,10 +183,8 @@ body.dark-mode #top li a:hover {
 .service-list {
     list-style-type: none;
     margin-top: 1.5rem;
-    margin-left: 2rem;
-    margin-right: 2rem;
     padding-left: 0;
-    font-size: 1rem;
+    font-size: 0.9rem;
     line-height: 1.5;
 }
 
@@ -208,7 +193,10 @@ body.dark-mode #top li a:hover {
     border: 1px solid rgb(60, 110, 110);
     background-color: rgb(60, 110, 110);
     margin: 1rem;
-    padding: 1rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    padding-right: 3rem;
+    padding-left: 3rem;
     border-radius: 12px;
 }
 
@@ -299,27 +287,10 @@ body.dark-mode #top li a:hover {
     width: 40%;
     border-radius: 30px;
     box-shadow: -7px -20px 7px -10px rgba(26, 68, 111, 0.9) inset,
-        0px 30px 5px -10px rgba(0, 0, 0, 0.3),
+        0rem 0rem 0.5rem 0.1rem rgba(0, 0, 0, 0.3),
         inset 0 0 10px 0px #fff,
         inset 0 0 25px 0px #fff;
-    /* opacity: 0; */
 }
-
-/* 
-.crystal-frame {
-    position: absolute;
-    content: "";
-    top:5%;
-    left: 30%;
-    width: 100px;
-  height: 100px;
-  border-radius: 30%;
-  display: inline-block;
-  background: radial-gradient(13% 5% at 45% 5%, #fff 20%, transparent), radial-gradient(20% 20% at 90% 95%, #53FAFF 15%, transparent);
-  box-shadow: -2px 65px 8px -40px #dbf2ff;
-  transform: rotate(-33deg);
-  position: absolute;
-}  */
 
 .project-card h4, 
 .project-card h5 {
@@ -328,7 +299,7 @@ body.dark-mode #top li a:hover {
 }
 
 .project-card p {
-    font-size: 0.95rem;
+    font-size: 0.9rem;
     margin: 0.5rem;
     padding-left: 1.2rem;
     padding-right: 1.2rem;
@@ -346,10 +317,11 @@ body.dark-mode #top li a:hover {
 
 .project-list strong {
     color: rgb(100, 190, 190);
+    font-size: 1rem;
 }
 
 .project-list li {
-    margin: 0.5rem;
+    margin-bottom: 2rem;
 }
 
 .project-btn {
@@ -361,7 +333,7 @@ body.dark-mode #top li a:hover {
     text-decoration: none;
     border: none;
     border-radius: 6px;
-    font-size: 16px;
+    font-size: 0.8rem;
     cursor: pointer;
     transition: background-color 0.2s ease;
 }
@@ -393,7 +365,7 @@ body.dark-mode #top li a:hover {
     text-decoration: none;
     border: none;
     border-radius: 6px;
-    font-size: 16px;
+    font-size: 0.8rem;
     cursor: pointer;
     transition: background-color 0.2s ease;
 }
@@ -445,20 +417,20 @@ body.dark-mode .skill-item {
 }
 
 .skill-item i {
-    font-size: 2rem;
+    font-size: 1.8rem;
     margin-bottom: 5px;
     transition: transform 0.5s ease-in-out;
 }
 
 .skill-item img {
-    width: 30px;
+    width: 2rem;
     height: auto;
     margin-bottom: 5px;
     transition: transform 0.5s ease;
 }
 
 .skill-item svg {
-    width: 30px;
+    width: 2rem;
     height: auto;
     margin-bottom: 5px;
     transition: transform 0.5s ease;
@@ -466,6 +438,7 @@ body.dark-mode .skill-item {
 
 .skill-item span {
     font-size: 0.7rem;
+    max-width: 4rem;
 }
 
 .skill-item:hover {
