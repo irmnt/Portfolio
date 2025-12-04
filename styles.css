@@ -54,8 +54,8 @@ footer {
 /* For iOS devices */
 @supports (-webkit-touch-callout: none) {
   .bg-container {
-    background-attachment: scroll !important;
-    background-size: 180% !important;
+    background-attachment: fixed !important;
+    background-size: 250% !important;
     background-position: center top !important;
   }
 }
