@@ -35,6 +35,9 @@ document.addEventListener('DOMContentLoaded', () => {
         themeIcon.classList.toggle('bi-moon-fill', !isDark);
 
         localStorage.setItem('theme', isDark ? 'dark' : 'light');
+
+        // Force a layout recalculation to trigger CSS transitions on pseudo-elements (fixes iOS rendering)
+        void body.offsetHeight;
     });
 
     // Scroll Animation
