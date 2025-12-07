@@ -69,6 +69,7 @@ footer {
     .bg-container::before {
         background-size: 180% !important;
         background-position: center top !important;
+        transition: opacity 0.3s ease-in-out, background-blend-mode 0.3s ease-in-out;
     }
 }
 
