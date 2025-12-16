@@ -27,13 +27,13 @@ h1 {
 
 h2,
 h3 {
-    margin-bottom: 20px;
+    margin-bottom: 1.25rem;
     font-weight: 600;
 }
 
 footer {
     background-color: rgb(50, 50, 50);
-    padding: 20px 0;
+    padding: 1.25rem 0;
     text-align: center;
     font-size: 0.9rem;
 }
@@ -52,7 +52,7 @@ footer {
         position: fixed;
         inset: 0; /* top:0; right:0; bottom:0; left:0 */
         background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 2000 1500'%3E%3Cdefs%3E%3Cellipse fill='none' stroke-width='3.3' stroke-opacity='0.3' id='a' rx='150' ry='1100'/%3E%3C/defs%3E%3Cg transform='scale(0.766)' style='transform-origin:center'%3E%3Cg style='transform-origin:center'%3E%3Cg transform='rotate(-160 0 0)' style='transform-origin:center'%3E%3Cg transform='translate(1000 750)'%3E%3Cuse stroke='%230f2d2d' href='%23a' transform='rotate(-60 0 0) scale(0.4)'/%3E%3Cuse stroke='%23163837' href='%23a' transform='rotate(-50 0 0) scale(0.5)'/%3E%3Cuse stroke='%231c4341' href='%23a' transform='rotate(-40 0 0) scale(0.6)'/%3E%3Cuse stroke='%23224d4b' href='%23a' transform='rotate(-30 0 0) scale(0.7)'/%3E%3Cuse stroke='%23295855' href='%23a' transform='rotate(-20 0 0) scale(0.8)'/%3E%3Cuse stroke='%232f635f' href='%23a' transform='rotate(-10 0 0) scale(0.9)'/%3E%3Cuse stroke='%23366d68' href='%23a' transform=''/%3E%3Cuse stroke='%233c6e6e' href='%23a' transform='rotate(10 0 0) scale(1.1)'/%3E%3Cuse stroke='%23477474' href='%23a' transform='rotate(20 0 0) scale(1.2)'/%3E%3Cuse stroke='%23517b7a' href='%23a' transform='rotate(30 0 0) scale(1.3)'/%3E%3Cuse stroke='%235b8180' href='%23a' transform='rotate(40 0 0) scale(1.4)'/%3E%3Cuse stroke='%23658886' href='%23a' transform='rotate(50 0 0) scale(1.5)'/%3E%3Cuse stroke='%236f8e8c' href='%23a' transform='rotate(60 0 0) scale(1.6)'/%3E%3Cuse stroke='%23799492' href='%23a' transform='rotate(70 0 0) scale(1.7)'/%3E%3Cuse stroke='%23839b98' href='%23a' transform='rotate(80 0 0) scale(1.8)'/%3E%3Cuse stroke='%238da19e' href='%23a' transform='rotate(90 0 0) scale(1.9)'/%3E%3Cuse stroke='%2397a7a4' href='%23a' transform='rotate(100 0 0) scale(2)'/%3E%3Cuse stroke='%2397aba7' href='%23a' transform='rotate(110 0 0) scale(2.1)'/%3E%3Cuse stroke='%239cb4ae' href='%23a' transform='rotate(120 0 0) scale(2.2)'/%3E%3Cuse stroke='%23a0bebe' href='%23a' transform='rotate(130 0 0) scale(2.3)'/%3E%3C/g%3E%3C/g%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
-        background-size: 250%;
+        background-size: 150%;
         background-repeat: no-repeat;
         background-position: center center;
         z-index: -1;
@@ -67,7 +67,7 @@ footer {
 @supports (-webkit-touch-callout: none) {
     /* On iOS tweak the pseudo-element sizing/position to avoid viewport zoom issues */
     .bg-container::before {
-        background-size: 180% !important;
+        background-size: 250% !important;
         background-position: center top !important;
         transition: opacity 0.3s ease-in-out, background-blend-mode 0.3s ease-in-out;
     }
@@ -116,22 +116,22 @@ body.dark-mode .skill-icons {
 body.dark-mode .project-btn,
 body.dark-mode .upcoming-btn,
 body.dark-mode .toggle-btn {
-    background-color: rgb(28, 28, 28);
+    background-color: rgba(40, 60, 60, 0.95);
     color: rgb(220, 220, 220);
 }
 
 /*For  All Section  */
 .page {
     margin: 0 auto;
-    padding: 0 20px;
-    max-width: 800px;
+    padding: 0 1.25rem;
+    max-width: 50rem;
     flex-wrap: wrap;
 }
 
 .section {
     width: 100%;
     min-height: 100vh;
-    padding: 100px 20px;
+    padding: 6.25rem 1.25rem;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -160,14 +160,14 @@ body.dark-mode .toggle-btn {
 
 /** Header navigation */
 .navbar-nav .nav-link {
-    padding: 10px 15px;
+    padding: 0.625rem 0.95rem;
     font-weight: 500;
     transition: color 0.3s;
 }
 
 .navbar-nav .nav-link:hover,
 .navbar-nav .nav-link.active {
-    border-bottom: 2px solid rgb(60, 110, 110);
+    border-bottom: 0.125rem solid rgb(60, 110, 110);
     font-weight: bold;
 }
 
@@ -175,17 +175,17 @@ body.dark-mode .toggle-btn {
     background-color: rgb(50, 50, 50);
     color: rgb(230, 245, 245);
     border: none;
-    padding: 10px 20px;
-    font-size: 16px;
+    padding: 0.625rem 1.25rem;
+    font-size: 1rem;
     cursor: pointer;
-    border-radius: 5px;
+    border-radius: 0.3125rem;
     transition: background-color 0.3s ease, transform 0.3s ease;
 }
 
 
 /* Top section */
 .list-inline {
-    padding-top: 50px;
+    padding-top: 3.125rem;
 }
 
 #top li a {
@@ -208,9 +208,9 @@ body.dark-mode .toggle-btn {
 
 /** About Section */
 .profile-img {
-    width: 200px;
+    width: 12.5rem;
     height: auto;
-    border-radius: 16px;
+    border-radius: 1rem;
     object-fit: cover;
     box-shadow: 0.5rem 0.5rem 0.5rem rgba(50, 50, 50, 0.5);
 }
@@ -218,10 +218,10 @@ body.dark-mode .toggle-btn {
 .about-card {
     background-color: rgb(85, 85, 85);
     border: rgb(85, 85, 85);
-    border-radius: 12px;
+    border-radius: 0.75rem;
     overflow: hidden;
-    padding: 20px;
-    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+    padding: 1.25rem;
+    box-shadow: 0.3125rem 0.3125rem 0.3125rem rgba(0, 0, 0, 0.5);
 }
 
 #about p {
@@ -245,14 +245,14 @@ body.dark-mode .toggle-btn {
 
 #service li {
     color: rgb(230, 245, 245);
-    border: 1px solid rgb(60, 110, 110);
+    border: 0.0625rem solid rgb(60, 110, 110);
     background-color: rgb(60, 110, 110);
     margin: 1rem;
     padding-top: 1rem;
     padding-bottom: 1rem;
-    padding-right: 3rem;
-    padding-left: 3rem;
-    border-radius: 12px;
+    padding-right: 1.875rem;
+    padding-left: 1.875rem;
+    border-radius: 0.75rem;
 }
 
 #service strong {
@@ -286,19 +286,19 @@ body.dark-mode .toggle-btn {
     text-align: left;
     font-weight: 600;
     opacity: 0.8;
-    padding-top: 30px;
-    padding-bottom: 10px;
+    padding-top: 1.875rem;
+    padding-bottom: 0.625rem;
 }
 
 .project-card {
     background-color: rgb(30, 80, 80);
     color: rgb(230, 245, 245);
-    border: 1px solid rgb(30, 80, 80);
-    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
-    border-radius: 12px;
+    border: 0.0625rem solid rgb(30, 80, 80);
+    box-shadow: 0.3125rem 0.3125rem 0.3125rem rgba(0, 0, 0, 0.5);
+    border-radius: 0.75rem;
     overflow: hidden;
     opacity: 0;
-    transform: translateY(100px);
+    transform: translateY(6.25rem);
     transition: opacity 0.3s ease-out, transform 0.3s ease-out;
 }
 
@@ -381,13 +381,13 @@ body.dark-mode .toggle-btn {
 
 .project-btn {
     display: inline-block;
-    padding: 5px 10px;
+    padding: 0.3125rem 0.625rem;
     margin-bottom: 0.5rem;
     background-color: rgb(50, 50, 50);
     color: rgb(230, 245, 245);
     text-decoration: none;
     border: none;
-    border-radius: 6px;
+    border-radius: 0.375rem;
     font-size: 0.8rem;
     cursor: pointer;
     transition: background-color 0.2s ease;
@@ -405,21 +405,21 @@ body.dark-mode .toggle-btn {
   background: transparent;
   color: rgb(230, 245, 245);
   border: none;
-  padding: 3px 12px;
+  padding: 0.1875rem 0.75rem;
   cursor: pointer;
-  border-radius: 6px;
+  border-radius: 0.375rem;
 }
 
 /* Project Section - Upcoming Projects */
 .upcoming-btn {
     display: inline-block;
-    padding: 5px 10px;
+    padding: 0.3125rem 0.625rem;
     margin-bottom: 0.5rem;
     background: rgb(200, 120, 120);
     color: rgb(230, 245, 245);
     text-decoration: none;
     border: none;
-    border-radius: 6px;
+    border-radius: 0.375rem;
     font-size: 0.8rem;
     cursor: pointer;
     transition: background-color 0.2s ease;
@@ -437,16 +437,16 @@ body.dark-mode .toggle-btn {
 
 .skill-icons {
     display: grid;
-    grid-template-columns: repeat(auto-fit, 60px);
+    grid-template-columns: repeat(auto-fit, 3.75rem);
     justify-items: center;
-    gap: 10px;
+    gap: 0.625rem;
     padding-left: 1.5rem;
-    padding-right: 10px;
+    padding-right: 0.625rem;
     background-color: rgb(110, 150, 150);
-    border-radius: 30px;
-    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+    border-radius: 1.875rem;
+    box-shadow: 0.3125rem 0.3125rem 0.3125rem rgba(0, 0, 0, 0.5);
     opacity: 0;
-    transform: translateY(200px);
+    transform: translateY(12.5rem);
     transition: opacity 0.3s ease-out, transform 0.3s ease-out;
 }
 
@@ -473,21 +473,21 @@ body.dark-mode .skill-item {
 
 .skill-item i {
     font-size: 1.8rem;
-    margin-bottom: 5px;
+    margin-bottom: 0.3125rem;
     transition: transform 0.5s ease-in-out;
 }
 
 .skill-item img {
     width: 2rem;
     height: auto;
-    margin-bottom: 5px;
+    margin-bottom: 0.3125rem;
     transition: transform 0.5s ease;
 }
 
 .skill-item svg {
     width: 2rem;
     height: auto;
-    margin-bottom: 5px;
+    margin-bottom: 0.3125rem;
     transition: transform 0.5s ease;
 }
 
@@ -504,10 +504,10 @@ body.dark-mode .skill-item {
 
 /* Contact Section */
 .contact-icons {
-    margin-top: 20px;
+    margin-top: 1.25rem;
     display: flex;
     justify-content: center;
-    gap: 30px;
+    gap: 1.875rem;
     font-size: 2.5rem;
 }
 
