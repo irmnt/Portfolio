@@ -4,26 +4,40 @@ document.addEventListener('DOMContentLoaded', () => {
     const body = document.body;
 
     // Initialize theme from localStorage or system preference
+    const bgContainer = document.querySelector('.bg-container');
     const storedTheme = localStorage.getItem('theme');
+
+    // helper to apply icon + body class + background opacity var
+    function applyTheme(isDark) {
+        body.classList.toggle('dark-mode', isDark);
+        themeIcon.classList.toggle('bi-sun-fill', isDark);
+        themeIcon.classList.toggle('bi-moon-fill', !isDark);
+
+        // update CSS variable used by the background ::before pseudo-element
+        if (bgContainer) {
+            bgContainer.style.setProperty('--bg-opacity', isDark ? '0.6' : '1');
+            // force a reflow to encourage iOS to repaint the pseudo-element
+            void bgContainer.offsetWidth;
+        }
+    }
+
     if (storedTheme === 'dark') {
-        body.classList.add('dark-mode');
-        themeIcon.classList.remove('bi-moon-fill');
-        themeIcon.classList.add('bi-sun-fill');
+        applyTheme(true);
     } else if (storedTheme === 'light') {
-        body.classList.remove('dark-mode');
-        themeIcon.classList.remove('bi-sun-fill');
-        themeIcon.classList.add('bi-moon-fill');
+        applyTheme(false);
     } else {
         // fallback: use system preference if available
-        const prefersDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
-        if (prefersDark) {
-            body.classList.add('dark-mode');
-            themeIcon.classList.remove('bi-moon-fill');
-            themeIcon.classList.add('bi-sun-fill');
-        } else {
-            body.classList.remove('dark-mode');
-            themeIcon.classList.remove('bi-sun-fill');
-            themeIcon.classList.add('bi-moon-fill');
+        const mq = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)');
+        const prefersDark = mq ? mq.matches : false;
+        applyTheme(prefersDark);
+
+        // if system preference changes and user hasn't chosen a theme, follow it live
+        if (mq) {
+            mq.addEventListener && mq.addEventListener('change', (e) => {
+                if (!localStorage.getItem('theme')) {
+                    applyTheme(e.matches);
+                }
+            });
         }
     }
 
@@ -36,8 +50,12 @@ document.addEventListener('DOMContentLoaded', () => {
 
         localStorage.setItem('theme', isDark ? 'dark' : 'light');
 
-        // Force a layout recalculation to trigger CSS transitions on pseudo-elements (fixes iOS rendering)
-        void body.offsetHeight;
+        // ensure background var updates and force reflow to repaint pseudo-element on iOS
+        if (bgContainer) {
+            bgContainer.style.setProperty('--bg-opacity', isDark ? '0.6' : '1');
+            // small reflow + optional transform toggle to ensure repaint
+            void bgContainer.offsetWidth;
+        }
     });
 
     // Scroll Animation
