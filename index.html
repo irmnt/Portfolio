@@ -21,6 +21,9 @@
           <button id="themeToggle" class="btn btn-sm btn-outline-light me-2" aria-label="Toggle theme">
             <i id="themeIcon" class="bi bi-moon-fill"></i>
           </button>
+          <button id="lang-toggle" onclick="toggleLanguage()" class="btn btn-sm btn-outline-light me-2">
+            JP
+          </button>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
             aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -60,7 +63,7 @@
         </div>
         <h2>ABOUT ME</h2>
         <div class="about-card">
-          <p>
+          <p data-i18n="about_me_p1">
             Hi! My name is Irumi Kikuchi — a dedicated <strong>software engineer</strong><br /> with over
             two and a half years of experience in
             <strong>full-stack</strong> development. My work spans
@@ -68,7 +71,7 @@
             <strong>no-code platforms</strong>, with a strong focus on delivering
             <strong>reliable</strong>, <strong>user-friendly systems</strong>.
           </p>
-          <p>
+          <p data-i18n="about_me_p2">
             With a hands-on approach to both
             <strong>development</strong> and <strong>problem-solving</strong>, I’ve
             contributed to projects involving <strong>JavaScript</strong>,
@@ -78,7 +81,7 @@
             my knowledge in <strong>AI</strong> and
             <strong>machine learning</strong> to grow into more advanced technical roles.
           </p>
-          <p>
+          <p data-i18n="about_me_p3">
             I thrive in <strong>collaborative environments</strong> and enjoy building
             <strong>practical</strong>, <strong>scalable solutions</strong> that align
             with real-world needs.
@@ -179,9 +182,10 @@
               <img src="images/weatherChecker.png" alt="Weather Checker" class="project-img img-back mb-2" />
               <h5 class="card-title">Python - Weather Checker</h5>
               <p class="card-text">
-                A console-based weather forecast application that retrieves real-time weather data for any city and displays
+                A console-based weather forecast application that retrieves real-time weather data for any city and
+                displays
                 detailed hourly forecasts with temperature conversions. The application fetches multi-day forecasts,
-                presents hourly temperatures in both Fahrenheit and Celsius, includes weather descriptions, 
+                presents hourly temperatures in both Fahrenheit and Celsius, includes weather descriptions,
                 and features error handling for invalid city names with an intuitive formatted table display.
               </p>
               <span class="project-tag">Python</span>
@@ -386,7 +390,7 @@
                     <strong>Core Cloud Fundamentals:</strong><br>
                     Explored essential AWS services (EC2, S3, VPC, RDS, IAM) <br>
                     and applied concepts of the Well-Architected Framework <br>
-                     for robust design.
+                    for robust design.
                   </li>
 
                   <li>
@@ -414,21 +418,21 @@
                     <strong>Data Pipeline Development:</strong><br>
                     Hands-on experience in constructing a cloud data pipeline, <br>
                     integrating services for data ingestion, storage, processing,<br>
-                     and analysis (e.g., S3, Lambda, DynamoDB/RDS, Glue).
+                    and analysis (e.g., S3, Lambda, DynamoDB/RDS, Glue).
                   </li>
 
                   <li>
                     <strong>Web Application Builder:</strong><br>
                     Developed and deployed cloud-native web applications, <br>
                     focusing on serverless and container technologies <br>
-                     (e.g., Lambda, ECS/Fargate) <br>
+                    (e.g., Lambda, ECS/Fargate) <br>
                     for cost-efficient and scalable hosting.
                   </li>
                 </ul>
               </div>
               <span class="project-tag">AWS</span>
             </div>
-            
+
             <!-- Okta Enterprise Account Management Project -->
             <div class="project-card">
               <div class="project-header">
@@ -482,7 +486,8 @@
                 <ul class="project-list">
                   <li>
                     <strong>Topology Emulation:</strong><br>
-                    Created reproducible, container-based network topologies using Containerlab and KNE with Docker backends.
+                    Created reproducible, container-based network topologies using Containerlab and KNE with Docker
+                    backends.
                   </li>
                   <li>
                     <strong>Protocol Testing:</strong><br>
@@ -491,7 +496,8 @@
                   </li>
                   <li>
                     <strong>Automation & CI:</strong><br>
-                    Automated lab bring-up and teardown with scripts and Docker Compose/KNE workflows to support repeatable
+                    Automated lab bring-up and teardown with scripts and Docker Compose/KNE workflows to support
+                    repeatable
                     test runs and CI integration.
                   </li>
                   <li>
@@ -686,6 +692,7 @@
   <!-- Bootstrap JS -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
   <script src="script.js"></script>
+  <script src="translation.js"></script>
 </body>
 
 </html>
