@@ -6,13 +6,13 @@ const translations = {
         about_me_p3: "Prioritizing <strong>scalability</strong> and <strong>automation</strong> over just \"working code\".<br /> Armed with a deep curiosity for protocols and data structures,<br /> I dissect complex errors and navigate uncharted technical territories <br />to deliver <strong>logical</strong>, <strong>root-cause solutions</strong>.",
 
         /* What I can do Sction */
-        service_list_1: "<strong>Full-Stack Development</strong><br />Build scalable and maintainable web applications using JavaScript, TypeScript, React, C#, and SQL.",
-        service_list_2: "<strong>Cloud Fundamentals</strong><br />Understand core cloud concepts and services across AWS and Azure, with hands-on practice in setting up basic infrastructure and deployment pipelines.",
-        service_list_3: "<strong>REST API Integration</strong><br />Develop and integrate RESTful APIs for seamless communication between frontend and backend systems.",
-        service_list_4: "<strong>No-Code & Automation Tools</strong><br />Use platforms like Okta Workflows and Microsoft 365 to automate business processes and streamline workflows.",
-        service_list_5: "<strong>Network Simulation & Protocol Testing</strong><br />Design and run container-based network topologies using Containerlab, KNE, and Docker. Develop Go-based test harnesses to exercise protocol-level behavior (BGP, IS-IS) and investigate per-test dependencies and interactions. Build reproducible labs and automate bring-up for CI-friendly networking workflows.",
-        service_list_6: "<strong>Identity & Access Management (Okta)</strong><br />Implement and manage enterprise account lifecycle and access controls using Okta and Okta Workflows. Work included SSO (SAML/OIDC), SCIM provisioning, MFA policies, API-driven automation, and workflow-based process automation to improve security and reduce manual provisioning overhead.",
-        service_list_7: "<strong>Team Collaboration</strong><br />Communicate effectively in cross-functional teams and contribute positively to agile development processes.",
+        service_list_1: "<strong>Full-Stack Development</strong><br /><br />Build scalable and maintainable web applications <br />using JavaScript, TypeScript, React, C#, and SQL.",
+        service_list_2: "<strong>Cloud Fundamentals</strong><br /><br />Understand core cloud concepts and services across AWS and Azure, <br />with hands-on practice in setting up basic infrastructure and deployment pipelines.",
+        service_list_3: "<strong>REST API Integration</strong><br /><br />Develop and integrate RESTful APIs for seamless communication <br />between frontend and backend systems.",
+        service_list_4: "<strong>No-Code & Automation Tools</strong><br /><br />Use platforms like Okta Workflows and Microsoft 365 <br />to automate business processes and streamline workflows.",
+        service_list_5: "<strong>Network Simulation & Protocol Testing</strong><br /><br />Design and run container-based network topologies <br />using Containerlab, KNE, and Docker. <br />Develop Go-based test harnesses to exercise protocol-level behavior (BGP, IS-IS)<br /> and investigate per-test dependencies and interactions. <br />Build reproducible labs and automate bring-up for CI-friendly networking workflows.",
+        service_list_6: "<strong>Identity & Access Management (Okta)</strong><br /><br />Implement and manage enterprise account lifecycle and access controls <br />using Okta and Okta Workflows. <br />Work included SSO (SAML/OIDC), SCIM provisioning, MFA policies, <br />API-driven automation, and workflow-based process automation <br />to improve security and reduce manual provisioning overhead.",
+        service_list_7: "<strong>Team Collaboration</strong><br /><br />Communicate effectively in cross-functional teams and contribute positively <br />to agile development processes.",
 
 
         /* Projects Section */
@@ -85,20 +85,21 @@ const translations = {
         about_me_p3: "単に<strong>「動くコード」</strong>を書くだけでなく、運用を見据えた<strong>自動化</strong>や、<strong>スケーラビリティ</strong>を考慮した設計・実装に強いこだわりを持つ。表面的な実装にとどまらず、プロトコルやデータ構造の深層まで掘り下げる<strong>探究心</strong>を武器に、複雑なエラーや未知の技術領域に対しても論理的なアプローチで<strong>本質的な解決策</strong>を導き出す。",
 
         /* What I can do Sction */
-        service_list_1: "<strong>Full-Stack Development</strong><br />JavaScript, TypeScript (React), C#, SQLを用い、拡張性と保守性を考慮した堅牢なWebアプリを設計・構築。",
-        service_list_2: "<strong>Cloud Fundamentals</strong><br />AWSおよびAzureにおけるクラウドの基本概念と主要サービスを習得。<br />インフラ構築からデプロイパイプラインの整備まで、ハンズオンを通じた実践的な運用スキルを持つ。",
-        service_list_3: "<strong>REST API Integration</strong><br />フロントエンド・バックエンド間のシームレスなデータ連携を実現する、RESTful APIの設計・開発および統合。",
-        service_list_4: "<strong>No-Code & Automation Tools</strong><br />Okta WorkflowsやMicrosoft 365を活用したビジネスプロセスの自動化。<br />業務フローの効率化とシステム間連携による工数削減を実現。",
-        service_list_5: "<strong>Network Simulation & Protocol Testing</strong><br />Containerlab, KNE, Dockerを用いたコンテナベースのネットワークトポロジ設計・構築。Go言語によるテストハーネス開発を通じ、プロトコルレベル（BGP, IS-IS）の挙動検証およびテスト依存関係の調査を実施。CI/CDに適した再現性の高いラボ環境の自動構築を行う。",
-        service_list_6: "<strong>Identity & Access Management (Okta)</strong><br />OktaおよびOkta Workflowsを用いたアカウントライフサイクル管理とアクセス制御の実装。SSO (SAML/OIDC)、SCIMプロビジョニング、MFAポリシー策定に加え、APIベースの自動化によりセキュリティ向上と手動運用を削減。",
-        service_list_7: "<strong>Team Collaboration</strong><br />各領域やチームとの円滑なコミュニケーションと、<br />アジャイル開発プロセスへ積極的に貢献。",
+        service_list_1: "<strong>Full-Stack Development</strong><br /><br />JavaScript, TypeScript (React), C#, SQLを用い、拡張性と保守性を考慮した<br />堅牢なWebアプリを設計・構築。",
+        service_list_2: "<strong>Cloud Fundamentals</strong><br /><br />AWSおよびAzureにおけるクラウドの基本概念と主要サービスを習得。<br />インフラ構築からデプロイパイプラインの整備まで、<br />ハンズオンを通じた実践的な運用スキルを持つ。",
+        service_list_3: "<strong>REST API Integration</strong><br /><br />フロントエンド・バックエンド間のシームレスなデータ連携を実現する、<br />RESTful APIの設計・開発および統合。",
+        service_list_4: "<strong>No-Code & Automation Tools</strong><br /><br />Okta WorkflowsやMicrosoft 365を活用したビジネスプロセスの自動化。<br />業務フローの効率化とシステム間連携による工数削減を実現。",
+        service_list_5: "<strong>Network Simulation & Protocol Testing</strong><br /><br />Containerlab, KNE, Dockerを用いたコンテナベースのネットワークトポロジ設計・構築。<br />Go言語によるテストハーネス開発を通じ、プロトコルレベル（BGP, IS-IS）の挙動検証およびテスト依存関係の調査を実施。CI/CDに適した再現性の高いラボ環境の自動構築を行う。",
+        service_list_6: "<strong>Identity & Access Management (Okta)</strong><br /><br />OktaおよびOkta Workflowsを用いたアカウントライフサイクル管理とアクセス制御の実装。<br />SSO (SAML/OIDC)、SCIMプロビジョニング、MFAポリシー策定に加え、<br />APIベースの自動化によりセキュリティ向上と手動運用を削減。",
+        service_list_7: "<strong>Team Collaboration</strong><br /><br />各領域やチームとの円滑なコミュニケーションと、<br />アジャイル開発プロセスへ積極的に貢献。",
 
         /* Projects Section */
-        project_1: "ASP.NET Frameworkを用いて構築した自動車ローン計算アプリケーション。借入金額、金利、税金、返済期間を基に、3つの柔軟なローンプランから月々の支払額を比較・シミュレーション可能。",
-        project_2: "AWS PartyRockを活用したAI搭載の食事分析アプリケーション。入力された食事の栄養素を分析し、より健康的でバランスの取れた食生活に向けた追加食材やメニューを提案。",
-        project_3: "2人対戦用のコンソール版オセロゲーム。有効な入力（配置可能箇所）の判定、石の自動反転処理、勝敗（ゲーム終了）の判定など、ゲームのコアロジックを網羅的に実装。",
+        project_1: "ASP.NET Frameworkを用いて構築した自動車ローン計算アプリケーション。<br />借入金額、金利、税金、返済期間を基に、3つの柔軟なローンプランから月々の支払額を比較・シミュレーション可能。",
+        project_2: "AWS PartyRockを活用したAI搭載の食事分析アプリケーション。<br />入力された食事の栄養素を分析し、より健康的でバランスの取れた食生活に向けた追加食材やメニューを提案。",
+        project_3: "2人対戦用のコンソール版オセロゲーム。<br />有効な入力（配置可能箇所）の判定、石の自動反転処理、勝敗（ゲーム終了）の判定など、ゲームのコアロジックを網羅的に実装。",
         project_4: "任意の都市のリアルタイムな気象データを取得し、詳細な天気予報を表示するコンソールアプリケーション。数日間のデータ取得、摂氏・華氏の温度変換に加え、無効な都市名入力時のエラーハンドリングを実装。データは直感的なテーブル形式で出力。",
-        project_5: "自身のソフトウェアエンジニアとしてのスキルや実績をアピールするため、ゼロから設計・開発したWebポートフォリオ。レスポンシブデザインとアニメーションを取り入れ、モダンなUIを実現。",
+        project_5: "ReactとPython、および機械学習（自然言語処理）を活用したWebアプリケーション。求人内容（Job Description）と履歴書（レジュメ）の適合度を定量的に分析し、マッチングスコアを算出する機能を実装。",
+        project_portfolio: "自身のソフトウェアエンジニアとしてのスキルや実績をアピールするため、ゼロから設計・開発したWebポートフォリオ。レスポンシブデザインとアニメーションを取り入れ、モダンなUIを実現。",
 
         /* Cloud & Infrastructure Projects Section */
         // Cloud Section General
