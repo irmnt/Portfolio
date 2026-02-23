@@ -20,7 +20,8 @@ const translations = {
         project_2: "An AI-powered app built with PartyRock that analyzes meal nutrition and recommends additions for a more balanced, healthier diet.",
         project_3: "A simple console-based Othello game where two players can compete against each other. The game includes valid move checks, automatic piece flipping, and game-over detection.",
         project_4: "A console-based weather forecast application that retrieves real-time weather data for any city and displays detailed hourly forecasts with temperature conversions. The application fetches multi-day forecasts, presents hourly temperatures in both Fahrenheit and Celsius, includes weather descriptions, and features error handling for invalid city names with an intuitive formatted table display.",
-        project_5: "A responsive and animated web portfolio designed and built from scratch to showcase my software engineering background, skills, and projects.",
+        project_5: "A web application built with React and Python that uses Machine Learning (NLP) to analyze and score the alignment between resumes and job descriptions.",
+        project_portfolio: "A responsive and animated web portfolio designed and built from scratch to showcase my software engineering background, skills, and projects.",
 
         /* Cloud & Infrastructure Projects Section */
         // Windows Server
