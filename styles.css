@@ -115,6 +115,11 @@ body.dark-mode .bg-container {
     --bg-opacity: 0.6;
 }
 
+body.dark-mode .bg-container::before {
+    opacity: 0.6;
+    background-blend-mode: multiply;
+}
+
 /* Navbar - keep it darker in dark mode */
 body.dark-mode .navbar {
     background-color: rgb(15, 20, 22) !important;
