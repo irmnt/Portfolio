@@ -75,8 +75,8 @@ footer {
 @supports (-webkit-touch-callout: none) {
     /* On iOS tweak the pseudo-element sizing/position to avoid viewport zoom issues */
     .bg-container::before {
-        /* iOS: prefer a larger size to avoid cropping; values come from vars so JS can tweak if needed */
-        --ios-bg-size: 180%;
+        /* iOS: prefer a larger size to avoid cropping */
+        --ios-bg-size: 200%;
         background-size: var(--bg-size, var(--ios-bg-size)) !important;
         background-position: var(--bg-position, center top) !important;
         transition: opacity 0.3s ease-in-out, background-blend-mode 0.3s ease-in-out, background-size 0.3s ease-in-out !important;

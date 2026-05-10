@@ -19,7 +19,7 @@ const translations = {
         project_1: "A car loan calculator built with ASP.NET Framework that lets users compare monthly payments across three flexible loan plans based on amount, interest, tax, and term.",
         project_2: "An AI-powered app built with PartyRock that analyzes meal nutrition and recommends additions for a more balanced, healthier diet.",
         project_3: "A simple console-based Othello game where two players can compete against each other. The game includes valid move checks, automatic piece flipping, and game-over detection.",
-        project_4: "A console-based weather forecast application that retrieves real-time weather data for any city and displays detailed hourly forecasts with temperature conversions. The application fetches multi-day forecasts, presents hourly temperatures in both Fahrenheit and Celsius, includes weather descriptions, and features error handling for invalid city names with an intuitive formatted table display.",
+        project_4: "A console weather app that displays real-time hourly forecasts with temperature conversions (F/C) and multi-day data for any city, including error handling.",
         project_5: "A web application built with React and Python that uses Machine Learning (NLP) to analyze and score the alignment between resumes and job descriptions.",
         project_portfolio: "A responsive and animated web portfolio designed and built from scratch to showcase my software engineering background, skills, and projects.",
 
